@@ -220,10 +220,13 @@ header {
                 font-family: inherit;
                 margin-top: .5rem;
                 height: 2.8rem;
-                color: #ababab;
                 border: 1px solid #ccd7e6;
                 border-radius: .2rem;
                 transition: all .3s ease-in-out;
+
+                &:invalid {
+                    color: #ababab;
+                }
 
                 &:hover {
                     border: 1px solid $primaryColor;

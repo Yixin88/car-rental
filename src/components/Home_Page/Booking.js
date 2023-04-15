@@ -11,7 +11,7 @@ export default function Booking() {
                             <i className='fa-solid fa-car'></i>
                             <label for='carType'>Select Your Car Type <b>*</b></label>
                         </div>
-                        <select name="" id="carType">
+                        <select name="" id="carType" required>
                             <option value="">Select your car type</option>
                             <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                             <option value="VW Golf 6">VW Golf 6</option>
@@ -26,7 +26,7 @@ export default function Booking() {
                             <i className='fa-solid fa-location-dot'></i>
                             <label for='pickUpLocation'>Pick-Up <b>*</b></label>
                         </div>
-                        <select name="" id="pickUpLocation">
+                        <select name="" id="pickUpLocation" required>
                             <option value="">Select Pick Up Location</option>
                             <option value="London">London</option>
                             <option value="Manchester">Manchester</option>
@@ -41,7 +41,7 @@ export default function Booking() {
                             <i className='fa-solid fa-location-dot'></i>
                             <label for='dropOffLocation'>Drop-Off <b>*</b></label>
                         </div>
-                        <select name="" id="dropOffLocation">
+                        <select name="" id="dropOffLocation" required>
                             <option value="">Select Drop Up Location</option>
                             <option value="London">London</option>
                             <option value="Manchester">Manchester</option>
@@ -56,14 +56,14 @@ export default function Booking() {
                             <i className='fa-regular fa-calendar-days '></i>
                             <label for='pickUpDate'>Pick-Up <b>*</b></label>
                         </div>
-                        <input type="date" id='pickUpDate'/>
+                        <input type="date" id='pickUpDate' required/>
                     </div>
                     <div className='bookingForm__element'>
                         <div>
                             <i className='fa-regular fa-calendar-days '></i>
                             <label for='dropOffDate'>Drop-Off <b>*</b></label>
                         </div>
-                        <input type="date" id='dropOffDate'/>
+                        <input type="date" id='dropOffDate' required/>
                     </div>
                     <button type='sumbit'>Search</button>
                 </form>

@@ -291,11 +291,13 @@ header .nav-bar__buttons__register:hover {
   font-family: inherit;
   margin-top: 0.5rem;
   height: 2.8rem;
-  color: #ababab;
   border: 1px solid #ccd7e6;
   border-radius: 0.2rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.booking-section .booking .bookingForm select:invalid, .booking-section .booking .bookingForm input:invalid {
+  color: #ababab;
 }
 .booking-section .booking .bookingForm select:hover, .booking-section .booking .bookingForm input:hover {
   border: 1px solid rgb(255, 75, 48);
