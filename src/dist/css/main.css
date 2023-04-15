@@ -56,6 +56,13 @@ header .nav-bar__links {
           flex-direction: row;
   gap: 1rem;
   font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 45rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 header .nav-bar__links a {
   color: black;
