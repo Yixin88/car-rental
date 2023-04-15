@@ -91,6 +91,11 @@ header .nav-bar__buttons__register {
   border-radius: 0.3rem;
   -webkit-box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
           box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+header .nav-bar__buttons__register:hover {
+  background-color: #fc2100;
 }
 
 .home-banner {
@@ -104,7 +109,6 @@ header .nav-bar__buttons__register {
 }
 .home-banner .container {
   z-index: 2;
-  border: red solid;
   position: relative;
   height: 97vh;
   display: -webkit-box;
@@ -124,6 +128,7 @@ header .nav-bar__buttons__register {
 }
 .home-banner .container__img {
   width: 65%;
+  max-width: 1000px;
 }
 .home-banner .container__detail {
   display: -webkit-box;
@@ -134,7 +139,7 @@ header .nav-bar__buttons__register {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 50rem;
+  max-width: 35rem;
 }
 .home-banner .container__detail h1 {
   font-size: 3.2rem;
@@ -157,6 +162,11 @@ header .nav-bar__buttons__register {
   display: flex;
   gap: 1rem;
   padding-top: 1.8rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .home-banner .container__detail__buttons a {
   padding: 1rem 3rem;
@@ -164,12 +174,41 @@ header .nav-bar__buttons__register {
   color: white;
   font-weight: 700;
   border-radius: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
 }
 .home-banner .container__detail__buttons a:first-child {
   background-color: rgb(255, 75, 48);
   -webkit-box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
           box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: solid rgb(255, 75, 48);
+}
+.home-banner .container__detail__buttons a:first-child:hover {
+  background-color: #fc2100;
+  -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.35);
+          box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.35);
 }
 .home-banner .container__detail__buttons a:last-child {
   background-color: black;
+  border: solid black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.home-banner .container__detail__buttons a:last-child:hover {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

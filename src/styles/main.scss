@@ -9,6 +9,7 @@
 }
 
 header {
+    
     .nav-bar {
         @include flexCenter($justify-content: space-between);
         padding: 2rem 2rem;
@@ -58,6 +59,11 @@ header {
                 background-color: $primaryColor;
                 border-radius: .3rem;
                 box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+                transition: all .5s ease-in-out;
+
+                &:hover {
+                    background-color: darken($color: $primaryColor, $amount: 10%);
+                }
             }
 
         }
@@ -76,7 +82,6 @@ header {
 
     .container {
         z-index: 2;
-        border: red solid;
         position: relative;
         height: 97vh;
         @include flexCenter();
@@ -84,13 +89,14 @@ header {
 
         &__img {
             width: 65%;
+            max-width: 1000px;
         }
 
         &__detail {
             display: flex;
             flex-direction: column;
             width: 100%;
-            max-width: 50rem;
+            max-width: 35rem;
 
             h1 {
                 font-size: 3.2rem;
@@ -115,6 +121,8 @@ header {
                 display: flex;
                 gap: 1rem;
                 padding-top: 1.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
 
                 a {
                     padding: 1rem 3rem;
@@ -122,14 +130,30 @@ header {
                     color: white;
                     font-weight: $weightVeryBold;
                     border-radius: .3rem;
+                    @include flexCenter();
+                    gap: .5rem;
 
                     &:first-child {
                         background-color: $primaryColor;
                         box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+                        transition: all .3s ease-in-out;
+                        border: solid $primaryColor;
+
+                        &:hover {
+                            background-color: darken($color: $primaryColor, $amount: 10%);
+                            box-shadow: 0 15px 15px 0 rgba(255,83,48,.35);
+                        }
                     }
 
                     &:last-child {
                         background-color: black;
+                        border: solid black;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            background-color: white;
+                            color: black;
+                        }
                     }
                 }
 
