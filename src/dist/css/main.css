@@ -260,6 +260,27 @@ header .nav-bar__buttons__register:hover {
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 50rem;
 }
+.booking-section .booking__invalid {
+  display: none;
+}
+.booking-section .booking__invalid.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  color: white;
+}
+.booking-section .booking__invalid i {
+  cursor: pointer;
+}
 .booking-section .booking .bookingForm {
   width: 100%;
   display: grid;

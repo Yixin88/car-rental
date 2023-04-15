@@ -187,6 +187,24 @@ header {
         border-radius: .3rem;
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
         margin-bottom: 50rem;
+
+        &__invalid {
+            display: none;
+
+            &.active {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: red;
+                padding: .2rem .5rem;
+                border-radius: .3rem;
+                color: white;
+            }
+
+            i {
+                cursor: pointer;
+            }
+        }
     
     
         .bookingForm {
