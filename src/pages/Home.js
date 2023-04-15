@@ -13,7 +13,7 @@ export default function Home() {
                     <h2>Plan your trip now</h2>
                     <h1>Save <span>big</span> with our car rental</h1>
                     <p>Rent the car of your dreams. Unbeatable prices, unlimted miles, flexible pick-up options and much more.</p>
-                    <div>
+                    <div className='container__detail__buttons'>
                         <NavLink>
                             Book Ride 
                             <i className='fa-solid fa-circle-check'></i>

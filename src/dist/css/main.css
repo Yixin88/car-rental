@@ -7,6 +7,7 @@
 
 body {
   font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 header .nav-bar {
@@ -23,9 +24,10 @@ header .nav-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 2rem;
-  margin: 0 1rem;
+  padding: 2rem 2rem;
   position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
   z-index: 10;
 }
@@ -119,7 +121,6 @@ header .nav-bar__buttons__register {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 2rem;
-  width: 100%;
 }
 .home-banner .container__img {
   width: 65%;
@@ -134,15 +135,41 @@ header .nav-bar__buttons__register {
           flex-direction: column;
   width: 100%;
   max-width: 50rem;
-  gap: 1rem;
 }
 .home-banner .container__detail h1 {
   font-size: 3.2rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 .home-banner .container__detail h1 span {
   color: rgb(255, 75, 48);
 }
 .home-banner .container__detail h2 {
   font-weight: 700;
+}
+.home-banner .container__detail p {
+  color: #706f7b;
+  margin: 1rem 0;
+}
+.home-banner .container__detail__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1.8rem;
+}
+.home-banner .container__detail__buttons a {
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.3rem;
+}
+.home-banner .container__detail__buttons a:first-child {
+  background-color: rgb(255, 75, 48);
+  -webkit-box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+          box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+.home-banner .container__detail__buttons a:last-child {
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
