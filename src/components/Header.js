@@ -8,7 +8,7 @@ export default function Header() {
         <nav className='nav-bar'>
             <div className='nav-bar__logo-image'>
                 <a href="#">
-                <img src={Logo} alt="Car Rental Logo" />
+                    <img src={Logo} alt="Car Rental Logo" />
                 </a>
             </div>
 

@@ -9,13 +9,13 @@ export default function PlanTripBanner() {
         <div className='planTrip-container'>
             <div className='planTrip-container__title'>
                 <h3>Plan your trip now</h3>
-                <h2>Qucik & easy car rental</h2>
+                <h2>Quick & easy car rental</h2>
             </div>
             <div className='planTrip-container__details'>
                 <div>
                     <img src={planCar} alt="plan car icon" />
                     <h3>Select Car</h3>
-                    <p>We offers a big range of vehicles for all your driving needs. We jabe tje perfect car to meet your needs</p>
+                    <p>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs</p>
                 </div>
                 <div>
                     <img src={planOperator} alt="plan operator icon" />

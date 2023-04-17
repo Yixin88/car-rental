@@ -89,7 +89,7 @@ export default function Booking() {
                         </div>
                         <input ref={dropOffDate} type="date" id='dropOffDate' required/>
                     </div>
-                    <button onClick={checkField} type='sumbit'>Search</button>
+                    <button onClick={checkField} type='submit'>Search</button>
                 </form>
             </div>
         </section>
