@@ -186,7 +186,6 @@ header {
         background-image: url('../../images/book-car/book-bg.png');
         border-radius: .3rem;
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-        margin-bottom: 50rem;
 
         &__invalid {
             display: none;
@@ -268,6 +267,51 @@ header {
                 &:hover {
                     background-color: darken($color: $primaryColor, $amount: 10%);
                     box-shadow: $primaryButtonHoverShadow;
+                }
+            }
+        }
+    }
+}
+
+.planTrip {
+    max-width: $maxWidth;
+    width: 100%;
+    margin: 10rem auto;
+    padding: 0 1rem;
+
+    .planTrip-container {
+        @include flexCenter($direction: column);
+        
+
+
+        &__title {
+            text-align: center;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+            width: 100%;
+
+            div {
+                @include flexCenter($direction: column, $justify-content: flex-start);
+                text-align: center;
+                padding: 3rem 6rem;
+
+                h3 {
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    color: #706f7b;
                 }
             }
         }

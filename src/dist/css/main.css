@@ -258,7 +258,6 @@ header .nav-bar__buttons__register:hover {
   border-radius: 0.3rem;
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 50rem;
 }
 .booking-section .booking__invalid {
   display: none;
@@ -344,4 +343,63 @@ header .nav-bar__buttons__register:hover {
   background-color: #fc2100;
   -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.35);
           box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.planTrip {
+  max-width: 100rem !important;
+  width: 100%;
+  margin: 10rem auto;
+  padding: 0 1rem;
+}
+.planTrip .planTrip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.planTrip .planTrip-container__title {
+  text-align: center;
+}
+.planTrip .planTrip-container__title h3 {
+  font-size: 1.5rem;
+}
+.planTrip .planTrip-container__title h2 {
+  font-size: 2.5rem;
+}
+.planTrip .planTrip-container__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  width: 100%;
+}
+.planTrip .planTrip-container__details div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 3rem 6rem;
+}
+.planTrip .planTrip-container__details div h3 {
+  font-size: 1.3rem;
+}
+.planTrip .planTrip-container__details div p {
+  color: #706f7b;
 }/*# sourceMappingURL=main.css.map */
