@@ -1,10 +1,10 @@
 @import './reset';
 @import './variables';
 
-@mixin flexCenter($direction: row, $justify-content: center) {
+@mixin flexCenter($direction: row, $justify-content: center, $align-item: center) {
     display: flex;
     justify-content: $justify-content;
-    align-items: center;
+    align-items: $align-item;
     flex-direction: $direction;
 }
 
@@ -122,7 +122,7 @@ header {
             }
 
             p {
-                color: #706f7b;
+                color: $grayTextColor;
                 margin: 1rem 0;
             }
 
@@ -311,7 +311,7 @@ header {
                 }
 
                 p {
-                    color: #706f7b;
+                    color: $grayTextColor;
                 }
             }
         }
@@ -342,12 +342,38 @@ header {
 
             p {
                 text-align: center;
-                color: #706f7b;
+                color: $grayTextColor;
             }
         }
 
         .fleet-car-container {
             
+
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                button {
+                    padding: 1rem;
+                    background-color: $grayBackgroundColor;
+                    font-family: $font;
+                    font-weight: $weightBold;
+                    font-size: 1.5rem;
+                    color: black;
+                    border: solid $grayBackgroundColor;
+                    text-align: start;
+                    transition: all .2s ease-in-out;
+
+                    &.active, &:hover {
+                        color: white;
+                        border: solid $primaryColor;
+                        background-color: $primaryColor;
+                        cursor: pointer;
+                    }
+
+                }
+            }
         }
 
 

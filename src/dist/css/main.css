@@ -463,4 +463,32 @@ header .nav-bar__buttons__register:hover {
 .fleet-section__container .fleet-heading-container p {
   text-align: center;
   color: #706f7b;
+}
+.fleet-section__container .fleet-car-container__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+.fleet-section__container .fleet-car-container__buttons button {
+  padding: 1rem;
+  background-color: #e9e9e9;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  border: solid #e9e9e9;
+  text-align: start;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.fleet-section__container .fleet-car-container__buttons button.active, .fleet-section__container .fleet-car-container__buttons button:hover {
+  color: white;
+  border: solid rgb(255, 75, 48);
+  background-color: rgb(255, 75, 48);
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
