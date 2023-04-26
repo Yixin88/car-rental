@@ -3,6 +3,7 @@ import HeroBanner from '../components/Home_Page/HeroBanner'
 import { NavLink } from 'react-router-dom'
 import Booking from '../components/Home_Page/Booking'
 import PlanTripBanner from '../components/Home_Page/PlanTripBanner'
+import Fleet from '../components/Home_Page/Fleet'
 
 const fleet = [
   {
@@ -14,7 +15,8 @@ const fleet = [
     ac: true,
     transmission: "Manual",
     fuel: "Petrol",
-    price: 45
+    price: 45,
+    id: 1
   },
   {
     name: "VW Golf 6",
@@ -25,7 +27,8 @@ const fleet = [
     ac: true,
     transmission: "Manual",
     fuel: "Diesel",
-    price: 37
+    price: 37,
+    id: 2
   },
   {
     name: "Toyota Camry",
@@ -36,7 +39,8 @@ const fleet = [
     ac: true,
     transmission: "Automatic",
     fuel: "Hybrid",
-    price: 35
+    price: 35,
+    id: 3
   },
   {
     name: "BMW 320 ModernLine",
@@ -47,7 +51,8 @@ const fleet = [
     ac: true,
     transmission: "Manual",
     fuel: "Diesel",
-    price: 40
+    price: 40,
+    id: 4
   },
   {
     name: "Mercedes-Benz GLK",
@@ -58,7 +63,8 @@ const fleet = [
     ac: true,
     transmission: "Automatic",
     fuel: "Petrol",
-    price: 50
+    price: 50,
+    id: 5
   },
   {
     name: "VW Passat CC",
@@ -69,17 +75,19 @@ const fleet = [
     ac: true,
     transmission: "Automatic",
     fuel: "Petrol",
-    price: 35
+    price: 35,
+    id: 6
   },
 ]
 
 
-export default function Home() {
+export default function Home({fleetArray}) {
   return (
     <>
         <HeroBanner />
         <Booking />
         <PlanTripBanner />
+        <Fleet fleetArray={fleet} />
     </>
   )
 }
