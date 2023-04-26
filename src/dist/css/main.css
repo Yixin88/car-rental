@@ -402,4 +402,65 @@ header .nav-bar__buttons__register:hover {
 }
 .planTrip .planTrip-container__details div p {
   color: #706f7b;
+}
+
+.fleet-section {
+  width: 100%;
+  max-width: 100rem !important;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.fleet-section__container {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.fleet-section__container .fleet-heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.fleet-section__container .fleet-heading-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.fleet-section__container .fleet-heading-container h2 {
+  font-size: 2.8rem;
+}
+.fleet-section__container .fleet-heading-container p {
+  text-align: center;
+  color: #706f7b;
 }/*# sourceMappingURL=main.css.map */
