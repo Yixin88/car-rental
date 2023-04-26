@@ -1,4 +1,10 @@
 import React, { createContext, useState } from 'react'
+import AudiImg from '../images/cars-big/audia1.jpg'
+import VwGolfImg from '../images/cars-big/golf6.jpg'
+import ToyotaImg from '../images/cars-big/toyotacamry.jpg'
+import BmwImg from '../images/cars-big/bmw320.jpg'
+import MercImg from '../images/cars-big/benz.jpg'
+import VwPassatImg from '../images/cars-big/passatcc.jpg'
 
 
 export const FleetArray = createContext();
@@ -16,7 +22,8 @@ export default function FleetContext({children}) {
       transmission: "Manual",
       fuel: "Petrol",
       price: 45,
-      id: 1
+      id: 1,
+      image: AudiImg
     },
     {
       name: "VW Golf 6",
@@ -28,7 +35,8 @@ export default function FleetContext({children}) {
       transmission: "Manual",
       fuel: "Diesel",
       price: 37,
-      id: 2
+      id: 2,
+      image: VwGolfImg
     },
     {
       name: "Toyota Camry",
@@ -40,7 +48,8 @@ export default function FleetContext({children}) {
       transmission: "Automatic",
       fuel: "Hybrid",
       price: 35,
-      id: 3
+      id: 3,
+      image: ToyotaImg
     },
     {
       name: "BMW 320 ModernLine",
@@ -52,7 +61,8 @@ export default function FleetContext({children}) {
       transmission: "Manual",
       fuel: "Diesel",
       price: 40,
-      id: 4
+      id: 4,
+      image: BmwImg
     },
     {
       name: "Mercedes-Benz GLK",
@@ -64,7 +74,8 @@ export default function FleetContext({children}) {
       transmission: "Automatic",
       fuel: "Petrol",
       price: 50,
-      id: 5
+      id: 5,
+      image: MercImg
     },
     {
       name: "VW Passat CC",
@@ -76,7 +87,8 @@ export default function FleetContext({children}) {
       transmission: "Automatic",
       fuel: "Petrol",
       price: 35,
-      id: 6
+      id: 6,
+      image: VwPassatImg
     },
   ])
 
