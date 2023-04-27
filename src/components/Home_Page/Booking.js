@@ -15,8 +15,9 @@ export default function Booking() {
     setInvalidIsActive(false);
   }
 
-  function checkField() {
-    if (carType.current.value === "" || pickUpLocation.current.value === "" ||dropOffLocation.current.value === "" || pickUpDate.current.value === "" || dropOffDate.current.value === "") {
+  function checkField(e) {
+      if (carType.current.value === "" || pickUpLocation.current.value === "" ||dropOffLocation.current.value === "" || pickUpDate.current.value === "" || dropOffDate.current.value === "") {
+        e.preventDefault()
         setInvalidIsActive('true');
     }
   }
@@ -29,13 +30,13 @@ export default function Booking() {
                     <p>Please Enter All Fields!</p>
                     <i className="fa-solid fa-xmark" onClick={closeInvalidContainer}></i>
                 </div>
-                <form className='bookingForm'>
+                <form className='bookingForm' noValidate>
                     <div className='bookingForm__element'>
                         <div>
                             <i className='fa-solid fa-car'></i>
                             <label htmlFor='carType'>Select Your Car Type <b>*</b></label>
                         </div>
-                        <select ref={carType} name="" id="carType" required>
+                        <select ref={carType} name="" id="carType" required >
                             <option value="">Select your car type</option>
                             <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                             <option value="VW Golf 6">VW Golf 6</option>
