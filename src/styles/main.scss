@@ -276,7 +276,7 @@ header {
 .planTrip {
     max-width: $maxWidth;
     width: 100%;
-    margin: 10rem auto;
+    margin: 10rem auto 2rem auto;
     padding: 0 1rem;
 
     .planTrip-container {
@@ -321,7 +321,7 @@ header {
 .fleet-section {
     width: 100%;
     max-width: $maxWidth;
-    margin: 10rem auto;
+    margin: 5rem auto 2rem auto;
     @include flexCenter();
     
     &__container {

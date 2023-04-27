@@ -348,7 +348,7 @@ header .nav-bar__buttons__register:hover {
 .planTrip {
   max-width: 100rem !important;
   width: 100%;
-  margin: 10rem auto;
+  margin: 10rem auto 2rem auto;
   padding: 0 1rem;
 }
 .planTrip .planTrip-container {
@@ -407,7 +407,7 @@ header .nav-bar__buttons__register:hover {
 .fleet-section {
   width: 100%;
   max-width: 100rem !important;
-  margin: 10rem auto;
+  margin: 5rem auto 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
