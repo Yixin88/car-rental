@@ -381,7 +381,7 @@ header {
                 
 
             .image-container {
-                max-width: 100%;
+                width: 35rem;
                 height: 100px;
                 margin: 2rem;
                 display: flex;
@@ -409,6 +409,8 @@ header {
                     
                     span {
                         font-weight: $weightVeryBold;
+                        width: 3rem;
+                        display: inline-block;
                     }
                 }
 

@@ -504,7 +504,7 @@ header .nav-bar__buttons__register:hover {
   cursor: pointer;
 }
 .fleet-section__container .fleet-car-container .image-container {
-  max-width: 100%;
+  width: 35rem;
   height: 100px;
   margin: 2rem;
   display: -webkit-box;
@@ -549,6 +549,8 @@ header .nav-bar__buttons__register:hover {
 }
 .fleet-section__container .fleet-car-container .details-container .pricePerDay-container span {
   font-weight: 700;
+  width: 3rem;
+  display: inline-block;
 }
 .fleet-section__container .fleet-car-container .details-container .detail-table {
   display: -webkit-box;
