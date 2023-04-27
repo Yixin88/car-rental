@@ -66,10 +66,13 @@ header {
                 background-color: $primaryColor;
                 border-radius: .3rem;
                 box-shadow: $primaryButtonShadow;
-                transition: all .5s ease-in-out;
+                transition: all .2s ease-in-out;
 
                 &:hover {
-                    background-color: darken($color: $primaryColor, $amount: 10%);
+                    &:hover {
+                        background-color: darken($color: $primaryColor, $amount: 10%);
+                        box-shadow: $primaryButtonHoverShadow;
+                    }
                 }
             }
 
@@ -479,6 +482,89 @@ header {
 
         span {
             color: $primaryColor;
+        }
+    }
+}
+
+.chooseUs-section {
+    width: 100%;
+    max-width: $maxWidth;
+    padding: 2rem;
+    margin: 0 auto;
+    background-image: url('../../images/chooseUs/bg.png');
+    @include flexCenter();
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .chooseUs-details-container {
+        @include flexCenter($justify-content: space-around);
+        width: 100%;
+        gap: 5rem;
+
+        &__left {
+            flex: 1 1 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 2rem;
+            max-width: 40rem;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+                line-height: 120%;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                color: $grayTextColor;
+                margin-bottom: 1.5rem;
+            }
+
+            a {
+                padding: 1rem 2rem;
+                text-decoration: none;
+                color: white;
+                background-color: $primaryColor;
+                border-radius: .2rem;
+                font-weight: $weightVeryBold;
+                font-size: 1rem;
+                box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+                transition: all 0.3s ease-in-out;
+
+                i {
+                    margin-left: .3rem;
+                }
+
+                &:hover {
+                    background-color: darken($color: $primaryColor, $amount: 10%);
+                    box-shadow: $primaryButtonHoverShadow;
+                }
+            }
+        }
+
+        &__right {
+            flex: 1 1 0;
+            padding: 0 2rem;
+            max-width: 40rem;
+            @include flexCenter($direction: column);
+            gap: 2rem;
+
+            &>div {
+                display: flex;
+                gap: 1rem;
+            }
+            
+
+            img {
+                width: 11rem;
+                object-fit: contain;
+            }
         }
     }
 }
