@@ -144,6 +144,7 @@ header {
                     border-radius: .3rem;
                     @include flexCenter();
                     gap: .5rem;
+                    cursor: pointer;
 
                     &:first-child {
                         background-color: $primaryColor;

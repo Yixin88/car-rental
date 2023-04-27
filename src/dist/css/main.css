@@ -203,6 +203,7 @@ header .nav-bar__buttons__register:hover:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .home-banner .container__detail__buttons a:first-child {
   background-color: rgb(255, 75, 48);

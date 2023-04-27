@@ -13,10 +13,10 @@ export default function Hero_Banner() {
                 <h1>Save <span>big</span> with our car rental</h1>
                 <p>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
                 <div className='container__detail__buttons'>
-                    <NavLink>
+                    <a href='#booking-section'>
                         Book Ride 
                         <i className='fa-solid fa-circle-check'></i>
-                    </NavLink>
+                    </a>
                     <NavLink>
                         Learn More 
                         <i className='fa-solid fa-angle-right'></i>
