@@ -323,10 +323,11 @@ header {
     max-width: $maxWidth;
     margin: 10rem auto;
     @include flexCenter();
-
+    
     &__container {
         padding: 2rem;
         @include flexCenter($direction: column);
+        width: 100%;
 
         .fleet-heading-container {
             @include flexCenter($direction: column);
@@ -347,7 +348,10 @@ header {
         }
 
         .fleet-car-container {
-            
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 3rem;
 
             &__buttons {
                 display: flex;
@@ -355,14 +359,14 @@ header {
                 gap: .5rem;
 
                 button {
-                    padding: 1rem;
+                    padding: .8rem 1rem;
                     background-color: $grayBackgroundColor;
                     font-family: $font;
                     font-weight: $weightBold;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     color: black;
                     border: solid $grayBackgroundColor;
-                    text-align: start;
+                    text-align: center;
                     transition: all .2s ease-in-out;
 
                     &.active, &:hover {
@@ -374,7 +378,82 @@ header {
 
                 }
             }
+                
+
+            .image-container {
+                max-width: 100%;
+                height: 100px;
+                margin: 2rem;
+                display: flex;
+                align-self: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .details-container {
+                @include flexCenter($direction: column);
+                width: 20rem;
+                align-self: flex-start;
+
+                .pricePerDay-container {
+                    background-color: $primaryColor;
+                    padding: .5rem 1rem;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    font-size: 1.5rem;
+                    
+                    span {
+                        font-weight: $weightVeryBold;
+                    }
+                }
+
+                .detail-table {
+                    display: flex;
+                    width: 100%;
+                    border-left: 2px solid black;
+                    border-right: 2px solid black;
+                    border-bottom: 2px solid black;
+
+                    span {
+                        width: 50%;
+                        text-align: center;
+                        margin: .5rem 0;
+                        font-weight: $weightBold;
+                        padding: 0 .2rem;
+                    }
+
+                    .table-option {
+                        border-right: 2px solid black;
+                    }
+                }
+
+                a {
+                    margin-top: 1rem;
+                    padding: .5rem;
+                    background-color: $primaryColor;
+                    text-decoration: none;
+                    color: white;
+                    box-shadow: 6px 6px 0 #efe9e9;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: $weightBold;
+                    font-size: 1.2rem;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        transform: translate(-3px, -3px);
+                        box-shadow: 12px 12px 0 #efe9e9;
+                    }
+                }
+            }
         }
+
+
 
 
     }

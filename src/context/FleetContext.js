@@ -14,7 +14,7 @@ export default function FleetContext({children}) {
   const [cars, setCars] = useState([
     {
       name: "Audi A1 S-Line",
-      Model: "Audi",
+      model: "Audi",
       mark: "A1",
       year: 2012,
       doors: 5,
@@ -27,7 +27,7 @@ export default function FleetContext({children}) {
     },
     {
       name: "VW Golf 6",
-      Model: "Golf 6",
+      model: "Golf 6",
       mark: "Volkswagen",
       year: 2008,
       doors: 5,
@@ -40,7 +40,7 @@ export default function FleetContext({children}) {
     },
     {
       name: "Toyota Camry",
-      Model: "Camry",
+      model: "Camry",
       mark: "Toyota",
       year: 2006,
       doors: 5,
@@ -53,7 +53,7 @@ export default function FleetContext({children}) {
     },
     {
       name: "BMW 320 ModernLine",
-      Model: "320",
+      model: "320",
       mark: "BMW",
       year: 2013,
       doors: 5,
@@ -66,7 +66,7 @@ export default function FleetContext({children}) {
     },
     {
       name: "Mercedes-Benz GLK",
-      Model: "Benz GLK",
+      model: "Benz GLK",
       mark: "Mercedes",
       year: 2006,
       doors: 5,
@@ -79,7 +79,7 @@ export default function FleetContext({children}) {
     },
     {
       name: "VW Passat CC",
-      Model: "Passat CC",
+      model: "Passat CC",
       mark: "Volkswagen",
       year: 2008,
       doors: 5,

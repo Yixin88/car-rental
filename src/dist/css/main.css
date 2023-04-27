@@ -437,6 +437,7 @@ header .nav-bar__buttons__register:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 .fleet-section__container .fleet-heading-container {
   display: -webkit-box;
@@ -464,6 +465,16 @@ header .nav-bar__buttons__register:hover {
   text-align: center;
   color: #706f7b;
 }
+.fleet-section__container .fleet-car-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem;
+}
 .fleet-section__container .fleet-car-container__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,14 +486,14 @@ header .nav-bar__buttons__register:hover {
   gap: 0.5rem;
 }
 .fleet-section__container .fleet-car-container__buttons button {
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   background-color: #e9e9e9;
   font-family: Poppins, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
   border: solid #e9e9e9;
-  text-align: start;
+  text-align: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -491,4 +502,91 @@ header .nav-bar__buttons__register:hover {
   border: solid rgb(255, 75, 48);
   background-color: rgb(255, 75, 48);
   cursor: pointer;
+}
+.fleet-section__container .fleet-car-container .image-container {
+  max-width: 100%;
+  height: 100px;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fleet-section__container .fleet-car-container .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fleet-section__container .fleet-car-container .details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.fleet-section__container .fleet-car-container .details-container .pricePerDay-container {
+  background-color: rgb(255, 75, 48);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.fleet-section__container .fleet-car-container .details-container .pricePerDay-container span {
+  font-weight: 700;
+}
+.fleet-section__container .fleet-car-container .details-container .detail-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.fleet-section__container .fleet-car-container .details-container .detail-table span {
+  width: 50%;
+  text-align: center;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  padding: 0 0.2rem;
+}
+.fleet-section__container .fleet-car-container .details-container .detail-table .table-option {
+  border-right: 2px solid black;
+}
+.fleet-section__container .fleet-car-container .details-container a {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(255, 75, 48);
+  text-decoration: none;
+  color: white;
+  -webkit-box-shadow: 6px 6px 0 #efe9e9;
+          box-shadow: 6px 6px 0 #efe9e9;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.fleet-section__container .fleet-car-container .details-container a:hover {
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+  -webkit-box-shadow: 12px 12px 0 #efe9e9;
+          box-shadow: 12px 12px 0 #efe9e9;
 }/*# sourceMappingURL=main.css.map */
