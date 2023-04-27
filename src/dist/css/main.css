@@ -760,12 +760,12 @@ header .nav-bar__buttons__register:hover:hover {
 
 .reviews-section {
   width: 100%;
-  max-width: 100rem !important;
-  margin: 0 auto;
-  padding: 5rem 2rem;
   background-color: #f8f8f8;
 }
 .reviews-section__container {
+  max-width: 100rem !important;
+  margin: 0 auto;
+  padding: 5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,13 +796,13 @@ header .nav-bar__buttons__register:hover:hover {
 .reviews-section__container__heading p {
   color: #706f7b;
 }
-.reviews-section .review-container {
+.reviews-section__container .review-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
   width: 90%;
 }
-.reviews-section .review-container__card {
+.reviews-section__container .review-container__card {
   max-width: 33rem;
   background-color: white;
   padding: 3rem;
@@ -824,13 +824,13 @@ header .nav-bar__buttons__register:hover:hover {
           flex-direction: column;
   border-radius: 0.3rem;
 }
-.reviews-section .review-container__card__msg {
+.reviews-section__container .review-container__card__msg {
   font-size: 1.3rem;
   line-height: 120%;
   font-weight: 500;
   padding-bottom: 2rem;
 }
-.reviews-section .review-container__card__user {
+.reviews-section__container .review-container__card__user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,7 +846,7 @@ header .nav-bar__buttons__register:hover:hover {
           flex-direction: row;
   width: 100%;
 }
-.reviews-section .review-container__card__user__details {
+.reviews-section__container .review-container__card__user__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,14 +862,14 @@ header .nav-bar__buttons__register:hover:hover {
           flex-direction: row;
   gap: 1rem;
 }
-.reviews-section .review-container__card__user__details img {
+.reviews-section__container .review-container__card__user__details img {
   width: 4rem;
   border-radius: 50%;
 }
-.reviews-section .review-container__card__user__details .reviewer-name {
+.reviews-section__container .review-container__card__user__details .reviewer-name {
   font-size: 1.2rem;
 }
-.reviews-section .review-container__card__user i {
+.reviews-section__container .review-container__card__user i {
   color: rgb(255, 75, 48);
   font-size: 4rem;
 }/*# sourceMappingURL=main.css.map */
