@@ -591,4 +591,24 @@ header .nav-bar__buttons__register:hover {
           transform: translate(-3px, -3px);
   -webkit-box-shadow: 12px 12px 0 #efe9e9;
           box-shadow: 12px 12px 0 #efe9e9;
+}
+
+.basicBanner {
+  width: 100%;
+  background-color: #2d2d2d;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.basicBanner h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.basicBanner h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.basicBanner h3 span {
+  color: rgb(255, 75, 48);
 }/*# sourceMappingURL=main.css.map */
