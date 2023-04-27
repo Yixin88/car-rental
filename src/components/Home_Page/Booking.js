@@ -22,7 +22,7 @@ export default function Booking() {
   }
 
   return (
-    <section className='booking-section'>
+    <section className='booking-section' id='booking-section'>
             <div ref={invalidContainer} className='booking'>
                 <h2>Book a car</h2>
                 <div className={invalidActive ? 'booking__invalid active': 'booking__invalid'}>

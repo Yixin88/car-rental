@@ -59,10 +59,10 @@ export default function Fleet() {
               <span className='table-option'>Fuel</span>
               <span>{currentCar.fuel}</span>
             </div>
-            <a href="#">Reserve Now</a>
+            <a href="#booking-section">Reserve Now</a>
           </div>
         </div>
-        
+
       </div>
     </section>
   )
