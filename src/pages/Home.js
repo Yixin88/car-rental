@@ -5,8 +5,9 @@ import PlanTripBanner from '../components/Home_Page/PlanTripBanner'
 import Fleet from '../components/Home_Page/Fleet'
 import BasicBanner from '../components/Home_Page/BasicBanner'
 import ChooseUs from '../components/Home_Page/ChooseUs'
+import Review from '../components/Home_Page/Review'
 
-export default function Home({fleetArray}) {
+export default function Home() {
 
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home({fleetArray}) {
         <Fleet />
         <BasicBanner />
         <ChooseUs />
+        <Review />
     </>
   )
 }
