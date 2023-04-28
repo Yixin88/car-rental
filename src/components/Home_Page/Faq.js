@@ -32,13 +32,13 @@ export default function Faq() {
         <div className='faq-section__container__questions__container'>
           {questions.map(question => {
             return(
-                <div className='question-container'>
-                  <div className='question-container__heading'>
-                    <h4>{questions.indexOf(question)+1}. {question.question}</h4>
-                    <i className='fa-solid fa-angle-down'></i>
-                  </div>
-                  <p>{question.answer}</p>
+              <div className='question-container'>
+                <div className='question-container__heading'>
+                  <h4>{questions.indexOf(question)+1}. {question.question}</h4>
+                  <i className='fa-solid fa-angle-down'></i>
                 </div>
+                <p>{question.answer}</p>
+              </div>
             )
           })}
         </div>
