@@ -872,4 +872,91 @@ header .nav-bar__buttons__register:hover:hover {
 .reviews-section__container .review-container__card__user i {
   color: rgb(255, 75, 48);
   font-size: 4rem;
+}
+
+.faq-section {
+  width: 100%;
+  max-width: 100rem !important;
+  margin: 0 auto;
+  background-image: url("../../images/faq/car.png");
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
+.faq-section__container {
+  padding: 0 2rem;
+  margin: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5rem;
+}
+.faq-section__container__heading {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.faq-section__container__heading h3 {
+  font-size: 1.5rem;
+}
+.faq-section__container__heading h2 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+.faq-section__container__heading p {
+  color: #706f7b;
+}
+.faq-section__container__questions__container {
+  max-width: 50rem;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.faq-section__container__questions__container .question-container__heading {
+  max-width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem 2rem;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  gap: 1rem;
+}
+.faq-section__container__questions__container .question-container__heading h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.faq-section__container__questions__container .question-container__heading i {
+  font-size: 1.2rem;
+}
+.faq-section__container__questions__container .question-container__heading.active, .faq-section__container__questions__container .question-container__heading:hover {
+  color: white;
+  background-color: rgb(255, 75, 48);
+  -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+          box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+}
+.faq-section__container__questions__container .question-container p {
+  color: #706f7b;
+  background-color: white;
+  padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

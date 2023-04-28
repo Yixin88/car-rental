@@ -6,6 +6,7 @@ import Fleet from '../components/Home_Page/Fleet'
 import BasicBanner from '../components/Home_Page/BasicBanner'
 import ChooseUs from '../components/Home_Page/ChooseUs'
 import Review from '../components/Home_Page/Review'
+import Faq from '../components/Home_Page/Faq'
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
         <BasicBanner />
         <ChooseUs />
         <Review />
+        <Faq />
     </>
   )
 }
