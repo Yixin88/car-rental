@@ -124,6 +124,7 @@ header .nav-bar__buttons__register:hover:hover {
   z-index: 2;
   position: relative;
   height: 97vh;
+  max-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,6 +263,9 @@ header .nav-bar__buttons__register:hover:hover {
   border-radius: 0.3rem;
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 5;
+  background-color: white;
 }
 .booking-section .booking__invalid {
   display: none;
