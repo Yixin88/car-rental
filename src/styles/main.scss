@@ -489,7 +489,6 @@ header {
 
 .chooseUs-section {
     width: 100%;
-    max-width: $maxWidth;
     padding: 2rem;
     margin: 0 auto;
     background-image: url('../../images/chooseUs/bg.png');
@@ -497,9 +496,10 @@ header {
     background-position: -225px 255px;
     background-repeat: no-repeat;
     @include flexCenter();
-
+    
     &__container {
         @include flexCenter($direction: column);
+        max-width: $maxWidth;
 
         .hero-image {
             width: 100%;
@@ -663,15 +663,15 @@ header {
 
 .faq-section {
     width: 100%;
-    max-width: $maxWidth;
     margin: 0 auto;
     background-image: url('../../images/faq/car.png');
     background-repeat: no-repeat;
     background-position: 0 70%;
-
+    
     &__container {
+        max-width: $maxWidth;
         padding: 0 2rem;
-        margin: 5rem 0;
+        margin: 5rem auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

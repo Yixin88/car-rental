@@ -618,7 +618,6 @@ header .nav-bar__buttons__register:hover:hover {
 
 .chooseUs-section {
   width: 100%;
-  max-width: 100rem !important;
   padding: 2rem;
   margin: 0 auto;
   background-image: url("../../images/chooseUs/bg.png");
@@ -653,6 +652,7 @@ header .nav-bar__buttons__register:hover:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100rem !important;
 }
 .chooseUs-section__container .hero-image {
   width: 100%;
@@ -876,15 +876,15 @@ header .nav-bar__buttons__register:hover:hover {
 
 .faq-section {
   width: 100%;
-  max-width: 100rem !important;
   margin: 0 auto;
   background-image: url("../../images/faq/car.png");
   background-repeat: no-repeat;
   background-position: 0 70%;
 }
 .faq-section__container {
+  max-width: 100rem !important;
   padding: 0 2rem;
-  margin: 5rem 0;
+  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
