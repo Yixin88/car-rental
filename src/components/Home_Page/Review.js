@@ -10,14 +10,16 @@ export default function Review() {
       message: "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. ",
       image: User1,
       imageAlt: "Harry Potter Profile pic",
-      location: "Privet Drive"
+      location: "Privet Drive",
+      userId: 1
     },
     {
       name: "Ron Weasley",
       message: "The car was in great condition and made our trip even better. Highly recommend for this car rental website!",
       image: User2,
       imageAlt: "Ron Weasley Profile pic",
-      location: "The Burrow"
+      location: "The Burrow",
+      userId: 2
     }
   ]
 
@@ -35,7 +37,7 @@ export default function Review() {
           {reviewers.map(user => {
             return(
               
-                <div className='review-container__card'>
+                <div key={user.userId} className='review-container__card'>
 
                   <p className='review-container__card__msg'>"{user.message}"</p>
 
