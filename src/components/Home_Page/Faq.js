@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Faq() {
 
@@ -20,6 +20,16 @@ export default function Faq() {
     }
   ]
 
+  const [ showAnswer, setShowAnswer ] = useState(null);
+
+  function toggleAnswer(i) {
+    if (showAnswer === i) {
+      return setShowAnswer(null);
+    }
+
+    setShowAnswer(i)
+  }
+
   return (
     <section className='faq-section'>
       <div className='faq-section__container'>
@@ -30,14 +40,14 @@ export default function Faq() {
         </div>
 
         <div className='faq-section__container__questions__container'>
-          {questions.map(question => {
+          {questions.map((question, index) => {
             return(
-              <div className='question-container'>
-                <div className='question-container__heading'>
+              <div key={question.id} onClick={() => toggleAnswer(index)} className='question-container'>
+                <div className={showAnswer === index ? 'question-container__heading active': 'question-container__heading'}>
                   <h4>{questions.indexOf(question)+1}. {question.question}</h4>
-                  <i className='fa-solid fa-angle-down'></i>
+                  <i className={showAnswer === index ? 'fa-solid fa-angle-down active': 'fa-solid fa-angle-down'}></i>
                 </div>
-                <p>{question.answer}</p>
+                <p className={showAnswer === index ? 'active':null}>{question.answer}</p>
               </div>
             )
           })}

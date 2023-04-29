@@ -945,6 +945,8 @@ header .nav-bar__buttons__register:hover:hover {
   position: relative;
   z-index: 1;
   gap: 1rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .faq-section__container__questions__container .question-container__heading h4 {
   font-size: 1.2rem;
@@ -952,6 +954,14 @@ header .nav-bar__buttons__register:hover:hover {
 }
 .faq-section__container__questions__container .question-container__heading i {
   font-size: 1.2rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.faq-section__container__questions__container .question-container__heading i.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .faq-section__container__questions__container .question-container__heading.active, .faq-section__container__questions__container .question-container__heading:hover {
   color: white;
@@ -962,5 +972,14 @@ header .nav-bar__buttons__register:hover:hover {
 .faq-section__container__questions__container .question-container p {
   color: #706f7b;
   background-color: white;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  padding: 0 2rem;
+}
+.faq-section__container__questions__container .question-container p.active {
+  height: 200px;
   padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

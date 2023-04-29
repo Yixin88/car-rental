@@ -717,27 +717,42 @@ header {
                     position: relative;
                     z-index: 1;
                     gap: 1rem;
-
+                    transition: .2s ease-in-out;
+                    
                     h4 {
                         font-size: 1.2rem;
                         font-weight: $weightSemiBold;
                     }
-
+                    
                     i {
                         font-size: 1.2rem;
-                    }
+                        transition: transform .2s ease-in;
 
+                        &.active {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    
                     &.active, &:hover{
                         color: white;
                         background-color: $primaryColor;
                         box-shadow: $primaryButtonHoverShadow;
                     }
                 }
-
+                
                 p {
                     color: $grayTextColor;
                     background-color: white;
-                    padding: 2rem;
+                    position: relative;
+                    overflow: hidden;
+                    height: 0;
+                    transition: .2s ease-out;
+                    padding: 0 2rem;
+
+                    &.active {
+                        height: 200px;
+                        padding: 2rem;
+                    }
                 }
             }
         }
