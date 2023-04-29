@@ -972,14 +972,15 @@ header .nav-bar__buttons__register:hover:hover {
 .faq-section__container__questions__container .question-container p {
   color: #706f7b;
   background-color: white;
-  position: relative;
   overflow: hidden;
-  height: 0;
+  max-height: 0;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   padding: 0 2rem;
 }
 .faq-section__container__questions__container .question-container p.active {
-  height: 200px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

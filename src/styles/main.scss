@@ -670,8 +670,8 @@ header {
     margin: 0 auto;
     background-image: url('../../images/faq/car.png');
     background-repeat: no-repeat;
-    background-position: 0 70%;
-    
+    background-position: 0 70%; 
+
     &__container {
         max-width: $maxWidth;
         padding: 0 2rem;
@@ -743,21 +743,18 @@ header {
                 p {
                     color: $grayTextColor;
                     background-color: white;
-                    position: relative;
                     overflow: hidden;
-                    height: 0;
+                    max-height: 0;
                     transition: .2s ease-out;
                     padding: 0 2rem;
 
                     &.active {
-                        height: 200px;
+                        max-height: fit-content;
                         padding: 2rem;
                     }
                 }
             }
         }
-
-
     }
 
 
