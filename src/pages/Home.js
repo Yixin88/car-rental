@@ -7,6 +7,7 @@ import BasicBanner from '../components/Home_Page/BasicBanner'
 import ChooseUs from '../components/Home_Page/ChooseUs'
 import Review from '../components/Home_Page/Review'
 import Faq from '../components/Home_Page/Faq'
+import Download from '../components/Home_Page/Download'
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
         <ChooseUs />
         <Review />
         <Faq />
+        <Download />
     </>
   )
 }
