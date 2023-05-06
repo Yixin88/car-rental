@@ -983,4 +983,35 @@ header .nav-bar__buttons__register:hover:hover {
   max-height: -moz-fit-content;
   max-height: fit-content;
   padding: 2rem;
+}
+
+.download-section {
+  width: 100%;
+  background-color: #f8f8f8;
+  background-image: url("../../images/banners/bg02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 2rem 0;
+}
+.download-section__container {
+  margin: 0 auto;
+  max-width: 100rem !important;
+  padding: 2rem;
+}
+.download-section__container .text-container {
+  max-width: 40rem;
+  padding: 3rem;
+}
+.download-section__container .text-container h2 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+.download-section__container .text-container p {
+  color: #706f7b;
+  margin-bottom: 2rem;
+}
+.download-section__container .text-container img {
+  margin-right: 2rem;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
