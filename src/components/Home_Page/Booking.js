@@ -1,6 +1,9 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
+import { CarPick } from '../../context/SelectedCarContext';
 
 export default function Booking() {
+
+  const { carPicked } = useContext(CarPick);
 
   const [ invalidActive, setInvalidIsActive ] = useState(false);
 
@@ -36,7 +39,7 @@ export default function Booking() {
                             <i className='fa-solid fa-car'></i>
                             <label htmlFor='carType'>Select Your Car Type <b>*</b></label>
                         </div>
-                        <select ref={carType} name="" id="carType" required >
+                        <select ref={carType} name="" id="carType" value={carPicked} required >
                             <option value="">Select your car type</option>
                             <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                             <option value="VW Golf 6">VW Golf 6</option>

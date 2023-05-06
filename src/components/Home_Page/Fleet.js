@@ -1,14 +1,22 @@
 import React, { useContext, useState } from 'react'
 import { FleetArray } from '../../context/FleetContext'
+import { CarPick } from '../../context/SelectedCarContext';
 
 export default function Fleet() {
 
   const { cars } = useContext(FleetArray);
+  const { setCarPicked } = useContext(CarPick);
 
   const [ currentCar, setCurrentCar ] = useState(cars[0]);
+  const [ selectedCar, setSelectedCar ] = useState(cars[0].name);
 
   function setCar(e) {
     setCurrentCar(cars.filter(car => car.name === e.target.value)[0])
+    setSelectedCar(e.target.value)
+  }
+
+  function chosenCar() {
+    setCarPicked(selectedCar);
   }
 
   return (
@@ -59,7 +67,7 @@ export default function Fleet() {
               <span className='table-option'>Fuel</span>
               <span>{currentCar.fuel}</span>
             </div>
-            <a href="#booking-section">Reserve Now</a>
+            <a href="#booking-section" onClick={chosenCar}>Reserve Now</a>
           </div>
         </div>
 
