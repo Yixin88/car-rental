@@ -36,9 +36,9 @@ export default function Footer() {
         <div className='working-hours'>
           <h3>WORKING HOURS</h3>
           <ul>
-            <li>Mon - Fri: 9:00AM - 9:00PM</li>
-            <li>Sat: 9:00am - 19:00PM</li>
-            <li>Sun: Closed</li>
+            <li><span className='open-day'>Mon - Fri:</span> 9:00AM - 9:00PM</li>
+            <li><span className='open-day'>Sat:</span> 9:00am - 19:00PM</li>
+            <li><span className='open-day'>Sun:</span> Closed</li>
           </ul>
         </div>
 

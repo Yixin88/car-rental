@@ -827,6 +827,10 @@ header {
         li {
             list-style: none;
             width: 100%;
+
+            span {
+                font-weight: $weightBold;
+            }
         }
 
         a {
