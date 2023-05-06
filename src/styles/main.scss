@@ -855,11 +855,16 @@ header {
 
         input {
             width: 100%;
-            border: none;
+            border: solid $grayBackgroundColor;
             padding: .8rem 1rem;
             background-color: $grayBackgroundColor;
             border-radius: .2rem;
             font-family: inherit;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: solid $primaryColor;
+            }
 
             &::placeholder {
                 text-align: center;

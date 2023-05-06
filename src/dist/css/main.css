@@ -1080,11 +1080,16 @@ header .nav-bar__buttons__register:hover {
 }
 .footer-section__container input {
   width: 100%;
-  border: none;
+  border: solid #e9e9e9;
   padding: 0.8rem 1rem;
   background-color: #e9e9e9;
   border-radius: 0.2rem;
   font-family: inherit;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.footer-section__container input:hover {
+  border: solid rgb(255, 75, 48);
 }
 .footer-section__container input::-webkit-input-placeholder {
   text-align: center;
