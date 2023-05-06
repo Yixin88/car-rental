@@ -105,7 +105,7 @@ header .nav-bar__buttons__register {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-header .nav-bar__buttons__register:hover:hover {
+header .nav-bar__buttons__register:hover {
   background-color: #fc2100;
   -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
           box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
@@ -1014,4 +1014,109 @@ header .nav-bar__buttons__register:hover:hover {
 .download-section__container .text-container img {
   margin-right: 2rem;
   cursor: pointer;
+}
+
+.footer-section {
+  width: 100%;
+  max-width: 100rem !important;
+  margin: 3rem auto;
+}
+.footer-section__container {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.footer-section__container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-section__container h3 span {
+  font-weight: 400;
+}
+.footer-section__container p {
+  margin-bottom: 1rem;
+  color: #706f7b;
+}
+.footer-section__container i {
+  margin-right: 0.5rem;
+}
+.footer-section__container li {
+  list-style: none;
+  width: 100%;
+}
+.footer-section__container a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.footer-section__container a:hover {
+  color: rgb(255, 75, 48);
+}
+.footer-section__container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-section__container .contact-info {
+  font-weight: 600;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.footer-section__container .contact-info:hover {
+  color: rgb(255, 75, 48);
+}
+.footer-section__container input {
+  width: 100%;
+  border: none;
+  padding: 0.8rem 1rem;
+  background-color: #e9e9e9;
+  border-radius: 0.2rem;
+  font-family: inherit;
+}
+.footer-section__container input::-webkit-input-placeholder {
+  text-align: center;
+}
+.footer-section__container input::-moz-placeholder {
+  text-align: center;
+}
+.footer-section__container input:-ms-input-placeholder {
+  text-align: center;
+}
+.footer-section__container input::-ms-input-placeholder {
+  text-align: center;
+}
+.footer-section__container input::placeholder {
+  text-align: center;
+}
+.footer-section__container button {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: rgb(255, 75, 48);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.footer-section__container button:hover {
+  background-color: #fc2100;
+  -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+          box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
 }/*# sourceMappingURL=main.css.map */
