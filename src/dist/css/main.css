@@ -124,7 +124,7 @@ header .nav-bar__buttons__register:hover {
   z-index: 2;
   position: relative;
   height: 97vh;
-  max-height: 60rem;
+  max-height: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,6 +141,7 @@ header .nav-bar__buttons__register:hover {
   margin: 0 auto;
   max-width: 100rem !important;
   padding: 0 2rem;
+  padding-top: 10rem;
 }
 .home-banner .container__img {
   width: 65%;

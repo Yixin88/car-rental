@@ -92,12 +92,13 @@ header {
         z-index: 2;
         position: relative;
         height: 97vh;
-        max-height: 60rem;
+        max-height: 50rem;
         @include flexCenter();
         margin: 0 auto;
         max-width: $maxWidth;
         padding: 0 2rem;
-
+        
+        padding-top: 10rem;
         &__img {
             width: 65%;
             max-width: 50rem;
