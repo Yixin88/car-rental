@@ -1119,4 +1119,44 @@ header .nav-bar__buttons__register:hover {
   background-color: #fc2100;
   -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
           box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+}
+
+.to-top {
+  background-color: rgb(255, 75, 48);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 8;
+  border: none;
+}
+.to-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
