@@ -761,6 +761,9 @@ header .nav-bar__buttons__register:hover {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.chooseUs-section__container .chooseUs-details-container__right .detail {
+  padding-top: 0.6rem;
+}
 
 .reviews-section {
   width: 100%;

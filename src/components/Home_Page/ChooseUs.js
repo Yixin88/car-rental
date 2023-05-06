@@ -22,7 +22,7 @@ export default function ChooseUs() {
           <div className='chooseUs-details-container__right'>
             <div>
               <img src={icon1} alt="car icon" />
-              <div>
+              <div className='detail'>
                 <h3 className='chooseUs-subheading'>Cross Country Drive</h3>
                 <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
               </div>
@@ -30,7 +30,7 @@ export default function ChooseUs() {
 
             <div>
               <img src={icon2} alt="money icon" />
-              <div>
+              <div className='detail'>
                 <h3 className='chooseUs-subheading'>All Inclusive Pricing</h3>
                 <p>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</p>
               </div>
@@ -38,7 +38,7 @@ export default function ChooseUs() {
 
             <div>
               <img src={icon3} alt="no hidden charge icon" />
-              <div>
+              <div className='detail'>
                 <h3 className='chooseUs-subheading'>No Hidden Charges</h3>
                 <p>Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.
                 </p>
