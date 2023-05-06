@@ -1119,8 +1119,8 @@ header .nav-bar__buttons__register:hover {
   border-radius: 0.2rem;
   color: white;
   background-color: rgb(255, 75, 48);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 .footer-section__container button:hover {
