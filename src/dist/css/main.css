@@ -1025,7 +1025,10 @@ header .nav-bar__buttons__register:hover {
   padding: 2rem 4rem;
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
+}
+.footer-section__container .carRental {
+  max-width: 20rem;
 }
 .footer-section__container h3 {
   font-size: 1.5rem;

@@ -804,7 +804,11 @@ header {
         padding: 2rem 4rem;
         display: grid;
         grid-template-columns: 1.3fr 1fr 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
+
+        .carRental {
+            max-width: 20rem;
+        }
 
         h3 {
             font-size: 1.5rem;
