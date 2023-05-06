@@ -154,6 +154,7 @@ header {
 
                         &:hover {
                             background-color: darken($color: $primaryColor, $amount: 10%);
+                            border: solid darken($color: $primaryColor, $amount: 10%);
                             box-shadow: $primaryButtonHoverShadow;
                         }
                     }
