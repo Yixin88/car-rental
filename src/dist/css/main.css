@@ -156,11 +156,12 @@ header .hamburger-menu {
   transition: 0.4s ease-in-out;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  display: none;
+  visibility: hidden;
 }
 header .hamburger-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  visibility: visible;
 }
 header .hamburger-menu .close-btn {
   position: absolute;
@@ -229,11 +230,6 @@ header .hamburger-menu a:hover {
   header .hamburger-btn {
     display: inline;
   }
-  header .hamburger-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .home-banner {
@@ -244,6 +240,18 @@ header .hamburger-menu a:hover {
   right: 0;
   top: 0;
   z-index: 1;
+}
+@media (max-width: 1024px) {
+  .home-banner .background {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+}
+@media (max-width: 768px) {
+  .home-banner .background {
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+  }
 }
 .home-banner .container {
   z-index: 2;
@@ -271,6 +279,16 @@ header .hamburger-menu a:hover {
 .home-banner .container__img {
   width: 65%;
   max-width: 50rem;
+}
+@media (max-width: 1024px) {
+  .home-banner .container__img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .home-banner .container__img {
+    display: none;
+  }
 }
 .home-banner .container__detail {
   display: -webkit-box;
@@ -355,6 +373,14 @@ header .hamburger-menu a:hover {
 .home-banner .container__detail__buttons a:last-child:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 768px) {
+  .home-banner .container__detail {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 
 .booking-section {

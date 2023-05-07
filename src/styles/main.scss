@@ -112,10 +112,11 @@ header {
         overflow: scroll;
         transition: .4s ease-in-out;
         transform: translateX(100%);
-        display: none;
+        visibility: hidden;
 
         &.active {
             transform: translateX(0);
+            visibility: visible;
         }
         
 
@@ -192,10 +193,6 @@ header {
         .hamburger-btn {
             display: inline;
         }
-
-        .hamburger-menu {
-            display: flex;
-        }
     }
 }
 
@@ -207,6 +204,13 @@ header {
         right: 0;
         top: 0;
         z-index: 1;
+        
+        @include lg {
+            filter: blur(10px);
+        }
+        @include md {
+            filter: blur(40px);
+        }
     }
 
     .container {
@@ -223,6 +227,14 @@ header {
         &__img {
             width: 65%;
             max-width: 50rem;
+
+            @include lg {
+                width: 50%;
+            }
+
+            @include md {
+                display: none;
+            }
         }
 
         &__detail {
@@ -292,6 +304,11 @@ header {
                     }
                 }
 
+            }
+
+            @include md {
+                align-items: center;
+                text-align: center
             }
         }
     }
