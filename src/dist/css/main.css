@@ -706,6 +706,21 @@ header .hamburger-menu a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 768px) {
+  .fleet-section__container .fleet-car-container .image-container {
+    height: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .fleet-section__container .fleet-car-container .image-container {
+    height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .fleet-section__container .fleet-car-container .image-container {
+    height: 180px;
+  }
+}
 .fleet-section__container .fleet-car-container .details-container {
   display: -webkit-box;
   display: -ms-flexbox;
