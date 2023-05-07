@@ -415,6 +415,10 @@ header {
                     box-shadow: $primaryButtonHoverShadow;
                 }
             }
+
+            @include xs {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }
