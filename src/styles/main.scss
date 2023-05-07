@@ -1123,6 +1123,27 @@ header {
                 box-shadow: $primaryButtonHoverShadow;
             }
         }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+            row-gap: 5rem;
+            
+            div {
+                text-align: center;
+            }
+
+            .carRental {
+                margin: 0 auto;
+            }
+
+            h3 {
+                margin-bottom: .3rem;
+            }
+        }
     }
 }
 
