@@ -156,6 +156,7 @@ header .hamburger-menu {
   transition: 0.4s ease-in-out;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  display: none;
 }
 header .hamburger-menu.active {
   -webkit-transform: translateX(0);
@@ -173,6 +174,7 @@ header .hamburger-menu .close-btn {
 header .hamburger-menu .close-btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  color: rgb(255, 75, 48);
 }
 header .hamburger-menu .close-btn:active {
   -webkit-transform: scale(1);
@@ -226,6 +228,11 @@ header .hamburger-menu a:hover {
   }
   header .hamburger-btn {
     display: inline;
+  }
+  header .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

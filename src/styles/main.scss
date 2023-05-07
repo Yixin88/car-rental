@@ -112,6 +112,7 @@ header {
         overflow: scroll;
         transition: .4s ease-in-out;
         transform: translateX(100%);
+        display: none;
 
         &.active {
             transform: translateX(0);
@@ -129,6 +130,7 @@ header {
 
             &:hover {
                 transform: scale(1.2);
+                color: $primaryColor;
             }
 
             &:active {
@@ -189,6 +191,10 @@ header {
 
         .hamburger-btn {
             display: inline;
+        }
+
+        .hamburger-menu {
+            display: flex;
         }
     }
 }
