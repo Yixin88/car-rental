@@ -564,6 +564,16 @@ header .hamburger-menu a:hover {
 .planTrip .planTrip-container__details div p {
   color: #706f7b;
 }
+@media (max-width: 1024px) {
+  .planTrip .planTrip-container__details div {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .planTrip .planTrip-container__details {
+    grid-template-columns: 1fr;
+  }
+}
 
 .fleet-section {
   width: 100%;

@@ -459,6 +459,14 @@ header {
                 p {
                     color: $grayTextColor;
                 }
+
+                @include lg {
+                    padding: 2rem 2rem;
+                }
+            }
+
+            @include xs {
+                grid-template-columns: 1fr;
             }
         }
     }
