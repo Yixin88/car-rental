@@ -873,9 +873,7 @@ header {
 .faq-section {
     width: 100%;
     margin: 0 auto;
-    background-image: url('../../images/faq/car.png');
-    background-repeat: no-repeat;
-    background-position: 0 70%; 
+    
 
     &__container {
         max-width: $maxWidth;
@@ -885,6 +883,9 @@ header {
         flex-direction: column;
         justify-content: space-between;
         gap: 5rem;
+        background-image: url('../../images/faq/car.png');
+            background-repeat: no-repeat;
+            background-position: 0 100%;
         
         &__heading {
             text-align: center;
@@ -961,8 +962,6 @@ header {
             }
         }
     }
-
-
 }
 
 .download-section {

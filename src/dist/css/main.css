@@ -1119,9 +1119,6 @@ header .hamburger-menu a:hover {
 .faq-section {
   width: 100%;
   margin: 0 auto;
-  background-image: url("../../images/faq/car.png");
-  background-repeat: no-repeat;
-  background-position: 0 70%;
 }
 .faq-section__container {
   max-width: 100rem !important;
@@ -1138,6 +1135,9 @@ header .hamburger-menu a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 5rem;
+  background-image: url("../../images/faq/car.png");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
 }
 .faq-section__container__heading {
   text-align: center;
