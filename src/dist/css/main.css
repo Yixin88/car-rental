@@ -1253,6 +1253,26 @@ header .hamburger-menu a:hover {
   margin-right: 2rem;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .download-section__container .text-container {
+    text-align: center;
+  }
+  .download-section__container .text-container img {
+    margin: 0 1rem;
+    width: 11.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .download-section__container .text-container img {
+    margin: 0.5rem;
+    width: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .download-section {
+    background-image: none;
+  }
+}
 
 .footer-section {
   width: 100%;
