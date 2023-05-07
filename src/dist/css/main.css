@@ -11,6 +11,9 @@ body {
   background-color: #fff;
 }
 
+header {
+  position: relative;
+}
 header .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,6 +112,121 @@ header .nav-bar__buttons__register:hover {
   background-color: #fc2100;
   -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
           box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+}
+header .hamburger-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 20;
+  font-size: 2rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: none;
+}
+header .hamburger-btn:hover {
+  color: rgb(255, 75, 48);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+header .hamburger-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: white;
+  overflow: scroll;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+header .hamburger-menu.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+header .hamburger-menu .close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-size: 2rem;
+}
+header .hamburger-menu .close-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+header .hamburger-menu .close-btn:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+header .hamburger-menu .mobile-signIn-btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.2rem;
+  color: white;
+  width: 10rem;
+  text-align: center;
+}
+header .hamburger-menu .mobile-signIn-btn.signIn-btn {
+  background-color: black;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.35);
+  border: solid black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+header .hamburger-menu .mobile-signIn-btn.signIn-btn:hover {
+  background-color: white;
+  border: solid black;
+  color: black;
+}
+header .hamburger-menu .mobile-signIn-btn.register-btn {
+  background-color: rgb(255, 75, 48);
+  -webkit-box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+          box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  border: solid rgb(255, 75, 48);
+}
+header .hamburger-menu .mobile-signIn-btn.register-btn:hover {
+  background-color: #fc2100;
+  border: solid #fc2100;
+  -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+          box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+  color: white;
+}
+header .hamburger-menu a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+header .hamburger-menu a:hover {
+  color: rgb(255, 75, 48);
+}
+@media (max-width: 1024px) {
+  header .nav-bar__links, header .nav-bar__buttons {
+    display: none;
+  }
+  header .hamburger-btn {
+    display: inline;
+  }
 }
 
 .home-banner {

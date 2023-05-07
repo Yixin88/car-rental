@@ -1,5 +1,6 @@
 @import './reset';
 @import './variables';
+@import './breakpoint';
 
 @mixin flexCenter($direction: row, $justify-content: center, $align-item: center) {
     display: flex;
@@ -9,6 +10,8 @@
 }
 
 header {
+
+    position: relative;
     
     .nav-bar {
         @include flexCenter($justify-content: space-between);
@@ -74,6 +77,118 @@ header {
                 }
             }
 
+        }
+    }
+
+    .hamburger-btn {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        z-index: 20;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        display: none;
+
+        &:hover {
+            color: $primaryColor;
+            transform: scale(1.2);
+        }
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 21;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.5rem;
+        font-weight: $weightSemiBold;
+        background-color: white;
+        overflow: scroll;
+        transition: .4s ease-in-out;
+        transform: translateX(100%);
+
+        &.active {
+            transform: translateX(0);
+        }
+        
+
+        .close-btn {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+            font-size: 2rem;
+            
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            &:active {
+                transform: scale(1);
+            }
+        }
+
+        .mobile-signIn-btn {
+            padding: .8rem 1.8rem;
+            border-radius: .2rem;
+            color: white;
+            width: 10rem;
+            text-align: center;
+            
+            &.signIn-btn {
+                background-color: black;
+                box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.35);
+                border: solid black;
+                transition: .2s ease-in-out;
+
+                &:hover {
+                    background-color: white;
+                    border: solid black;
+                    color: black;
+                }
+            }
+
+            &.register-btn {
+                background-color: $primaryColor;
+                box-shadow: $primaryButtonShadow;
+                border: solid $primaryColor;
+
+                &:hover {
+                    background-color: darken($color: $primaryColor, $amount: 10%);
+                    border: solid darken($color: $primaryColor, $amount: 10%);
+                    box-shadow: $primaryButtonHoverShadow;
+                    color: white;
+                }
+            }
+        }
+        
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    @include lg {
+        .nav-bar__links, .nav-bar__buttons {
+            display: none;
+        }
+
+        .hamburger-btn {
+            display: inline;
         }
     }
 }
