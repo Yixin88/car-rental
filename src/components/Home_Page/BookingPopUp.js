@@ -1,14 +1,17 @@
-import React from 'react'
-import car from '../../images/cars-big/golf6.jpg'
+import React, { useContext } from 'react'
+import { BookingFormPopUp } from '../../context/Popup'
 
-export default function BookingPopUp() {
+export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, dropOffLocation, carName, carImg }) {
+
+  const { activePopUp, setActivePopUp } = useContext(BookingFormPopUp);
+
   return (
     <div className='booking-popup'>
-      <div className='booking-popup__overlay'></div>
-      <div className='booking-popup__container'>
+      <div className={`booking-popup__overlay ${activePopUp && 'active'}`} onClick={() => {setActivePopUp(false)}}></div>
+      <div className={`booking-popup__container ${activePopUp && 'active'}`}>
         <div className='booking-popup__container__header'>
           <h2>COMPLETE RESERVATION</h2>
-          <i className='fa-solid fa-xmark'></i>
+          <i className='fa-solid fa-xmark' onClick={() => setActivePopUp(false)}></i>
         </div>
         <div className='content'>
           <div className='booking-popup__container__info'>
@@ -23,35 +26,35 @@ export default function BookingPopUp() {
                   <i className='fa-solid fa-location-dot'></i>
                   <div>
                     <h4 className='test'>Pick-Up Date & Time <span className='asterisk'>*</span></h4>
-                    <span className='date'>2023-06-01 / <input type="time" required/></span>
+                    <span className='date'>{pickUpDate} / <input type="time" required/></span>
                   </div>
                 </div>
                 <div>
                   <i className='fa-solid fa-location-dot'></i>
                   <div>
                     <h4>Drop-off Date & Time <span className='asterisk'>*</span></h4>
-                    <span className='date'>2023-06-01 / <input type="time" required/></span>
+                    <span className='date'>{dropOffDate} / <input type="time" required/></span>
                   </div>
                 </div>
                 <div>
                   <i className='fa-solid fa-calendar-days'></i>
                   <div>
                     <h4>Pick-Up Location</h4>
-                    <span className='location'>London</span>
+                    <span className='location'>{pickupLocation}</span>
                   </div>
                 </div>
                 <div>
                   <i className='fa-solid fa-calendar-days'></i>
                   <div>
                     <h4>Drop-Off Location</h4>
-                    <span className='location'>London</span>
+                    <span className='location'>{dropOffLocation}</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className='booking-popup__container__details__right'>
-              <h3>Car - <span>VW Golf 6</span></h3>
-              <img src={car} alt="" />
+              <h3>Car - <span>{carName}</span></h3>
+              <img src={carImg} alt={carName} />
             </div>
           </div>
   
@@ -104,7 +107,7 @@ export default function BookingPopUp() {
                 <label htmlFor="news">Please send me latest news and updates</label>
               </div>
             </div>
-            
+
             <div className='submit-container'>
               <button type='submit'>Reserve Now</button>
             </div>

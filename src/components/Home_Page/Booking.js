@@ -1,30 +1,41 @@
 import React, { useContext, useRef, useState } from 'react'
 import { CarPick } from '../../context/SelectedCarContext';
 import BookingPopUp from './BookingPopUp';
+import { BookingFormPopUp } from '../../context/Popup';
+import { FleetArray } from '../../context/FleetContext';
 
 export default function Booking() {
 
   const { carPicked } = useContext(CarPick);
+  const { setActivePopUp } = useContext(BookingFormPopUp);
+  const { cars } = useContext(FleetArray);
 
   const [ invalidActive, setInvalidIsActive ] = useState(false);
+  const [ carType, setCarType ] = useState();
+  const [ pickUpLocation, setPickUpLocation ] = useState();
+  const [ dropOffLocation, setDropOffLocation ] = useState();
+  const [ pickUpDate, setPickUpDate ] = useState();
+  const [ dropOffDate, setDropOffDate ] = useState();
+  const [ carImg, setCarImg ] = useState();
+
 
   const invalidContainer = useRef();
-  const carType = useRef();
-  const pickUpLocation = useRef();
-  const dropOffLocation = useRef();
-  const pickUpDate = useRef();
-  const dropOffDate = useRef();
+
 
   function closeInvalidContainer() {
     setInvalidIsActive(false);
   }
 
   function checkField(e) {
-      if (carType.current.value === "" || pickUpLocation.current.value === "" ||dropOffLocation.current.value === "" || pickUpDate.current.value === "" || dropOffDate.current.value === "") {
+      if (!carType || !pickUpLocation|| !dropOffLocation|| !pickUpDate || !dropOffDate ) {
         e.preventDefault()
-        setInvalidIsActive('true');
+        setInvalidIsActive(true);
+        return
     }
+    e.preventDefault();
+    setActivePopUp(true);
   }
+  
 
   return (
     <section className='booking-section' id='booking-section'>
@@ -40,7 +51,11 @@ export default function Booking() {
                         <i className='fa-solid fa-car'></i>
                         <label htmlFor='carType'>Select Your Car Type <b>*</b></label>
                     </div>
-                    <select ref={carType} name="" id="carType" value={carPicked} required >
+                    <select name="" id="carType" value={carPicked} 
+                    onChange={(e) => {
+                        setCarType(e.target.value); 
+                        setCarImg(cars.filter(item => item.name === e.target.value)[0].image)}
+                    } required >
                         <option value="">Select your car type</option>
                         <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                         <option value="VW Golf 6">VW Golf 6</option>
@@ -55,7 +70,7 @@ export default function Booking() {
                         <i className='fa-solid fa-location-dot'></i>
                         <label htmlFor='pickUpLocation'>Pick-Up <b>*</b></label>
                     </div>
-                    <select ref={pickUpLocation} name="" id="pickUpLocation" required>
+                    <select  name="" id="pickUpLocation" onChange={(e) => setPickUpLocation(e.target.value)} required>
                         <option value="">Select Pick Up Location</option>
                         <option value="London">London</option>
                         <option value="Manchester">Manchester</option>
@@ -70,7 +85,7 @@ export default function Booking() {
                         <i className='fa-solid fa-location-dot'></i>
                         <label htmlFor='dropOffLocation'>Drop-Off <b>*</b></label>
                     </div>
-                    <select ref={dropOffLocation} name="" id="dropOffLocation" required>
+                    <select name="" id="dropOffLocation" onChange={(e) => setDropOffLocation(e.target.value)} required>
                         <option value="">Select Drop Up Location</option>
                         <option value="London">London</option>
                         <option value="Manchester">Manchester</option>
@@ -85,19 +100,20 @@ export default function Booking() {
                         <i className='fa-regular fa-calendar-days '></i>
                         <label htmlFor='pickUpDate'>Pick-Up <b>*</b></label>
                     </div>
-                    <input ref={pickUpDate} type="date" id='pickUpDate' required/>
+                    <input type="date" id='pickUpDate' onChange={(e) => setPickUpDate(e.target.value)} required/>
                 </div>
                 <div className='bookingForm__element'>
                     <div>
                         <i className='fa-regular fa-calendar-days '></i>
                         <label htmlFor='dropOffDate'>Drop-Off <b>*</b></label>
                     </div>
-                    <input ref={dropOffDate} type="date" id='dropOffDate' required/>
+                    <input type="date" id='dropOffDate' onChange={(e) => setDropOffDate(e.target.value)} required/>
                 </div>
                 <button onClick={checkField} type='submit'>Search</button>
             </form>
         </div>
-        <BookingPopUp />
+
+        <BookingPopUp pickUpDate={pickUpDate} dropOffDate={dropOffDate} pickupLocation={pickUpLocation} dropOffLocation={dropOffLocation} carName={carType} carImg={carImg}/>
     </section>
   )
 }
