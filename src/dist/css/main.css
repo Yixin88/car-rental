@@ -437,6 +437,7 @@ header .hamburger-menu a:hover {
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
   color: white;
+  gap: 2rem;
 }
 .booking-section .booking__invalid i {
   cursor: pointer;

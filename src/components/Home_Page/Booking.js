@@ -17,6 +17,7 @@ export default function Booking() {
   const [ pickUpDate, setPickUpDate ] = useState();
   const [ dropOffDate, setDropOffDate ] = useState();
   const [ carImg, setCarImg ] = useState();
+  const [ errorMsg, setErrorMsg ] = useState();
 
 
   const invalidContainer = useRef();
@@ -29,9 +30,16 @@ export default function Booking() {
   function checkField(e) {
       if (!carType || !pickUpLocation|| !dropOffLocation|| !pickUpDate || !dropOffDate ) {
         e.preventDefault()
+        setErrorMsg('Please Enter All Fields!');
+        setInvalidIsActive(true);
+        return
+    } else if (pickUpDate >= dropOffDate) {
+        e.preventDefault()
+        setErrorMsg('Drop-off date must be later than pick-up date');
         setInvalidIsActive(true);
         return
     }
+
     e.preventDefault();
     setInvalidIsActive(false);
     setActivePopUp(true);
@@ -45,7 +53,7 @@ export default function Booking() {
         <div ref={invalidContainer} className='booking'>
             <h2>Book a car</h2>
             <div className={invalidActive ? 'booking__invalid active': 'booking__invalid'}>
-                <p>Please Enter All Fields!</p>
+                <p>{errorMsg}</p>
                 <i className="fa-solid fa-xmark" onClick={closeInvalidContainer}></i>
             </div>
             <form className='bookingForm' noValidate>

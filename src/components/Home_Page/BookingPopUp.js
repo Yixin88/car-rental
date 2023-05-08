@@ -164,7 +164,7 @@ export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, 
             </div>
           </form>
           <div className={`booking-successful ${successful && 'successful'}`}>
-            <i class="fa-solid fa-circle-check"></i>
+            <i className="fa-solid fa-circle-check"></i>
             <p>Booking Successful</p>
             <button onClick={() => {setActivePopUp(false); cleanForm()}}>Close</button>
           </div>
