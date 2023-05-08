@@ -438,6 +438,36 @@ header .hamburger-menu a:hover {
   border-radius: 0.3rem;
   color: white;
   gap: 2rem;
+  -webkit-animation: popOut 1s ease-in-out 1;
+          animation: popOut 1s ease-in-out 1;
+}
+@-webkit-keyframes popOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes popOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 .booking-section .booking__invalid i {
   cursor: pointer;

@@ -350,6 +350,20 @@ header {
             display: none;
 
             &.active {
+                @keyframes popOut{
+                    0%{
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.03);
+                    }
+
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -358,6 +372,7 @@ header {
                 border-radius: .3rem;
                 color: white;
                 gap: 2rem;
+                animation: popOut 1s ease-in-out 1 ;
             }
 
             i {
