@@ -9,6 +9,19 @@
     flex-direction: $direction;
 }
 
+@mixin formInput {
+    padding: .7rem 1rem;
+    background-color: $inputBackgroundColor;
+    border: solid $inputBackgroundColor;
+    border-radius: .2rem;
+    transition: .2s ease-in-out;
+    font-family: inherit;
+
+    &:hover {
+        border: solid $primaryColor;
+    }
+}
+
 header {
 
     position: relative;
@@ -425,6 +438,7 @@ header {
 
 .booking-popup {
     position: relative;
+    overflow: scroll;
 
     &__overlay {
         position: fixed;
@@ -448,11 +462,19 @@ header {
         transform: translate(-50%, -50%);
         left: 50%;
         width: 100%;
-        max-width: 60rem;
+        max-width: 55rem;
         background-color: white;
         display: flex;
         flex-direction: column;
         overflow: scroll;
+        
+        .content {
+            overflow: scroll;
+        }
+
+        .title {
+            color: $primaryColor;
+        }
 
         &__header {
             background-color: $primaryColor;
@@ -491,7 +513,8 @@ header {
         &__details {
             display: flex;
             padding: 1rem 2rem;
-            border-bottom: solid #dbdbdb;
+            border-bottom: solid $inputBackgroundColor;
+            gap: 2rem;
             
             &__left {
                 flex: 1 1 0;
@@ -499,10 +522,20 @@ header {
                 flex-direction: column;
                 gap: 1rem;
 
+
+                .location, .date {
+                    color: $grayTextColor;
+                }
+
+                
                 &>div {
                     display: flex;
                     flex-direction: column;
                     gap: 2rem;
+                    
+                    .asterisk {
+                        color: red;
+                    }
 
                     &>div {
                         display: flex;
@@ -510,6 +543,7 @@ header {
 
                         i {
                             font-size: 1.5rem;
+                            color: $grayTextColor;
                         }
                     }
                 }
@@ -520,12 +554,136 @@ header {
                 display: flex;
                 flex-direction: column;
 
+                span {
+                    color: $primaryColor;
+                }
+
                 img {
                     width: 100%;
                     max-width: 30rem;
                     align-self: center;
                     justify-self: center;
                     margin: auto;
+                }
+            }
+
+            @include sm {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        &__form-container {
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .input-container::after {
+                content: 'This field is required.';
+                font-size: .7rem;
+                display: block;
+            }
+
+            &__form {
+
+                label::after {
+                    content: ' *';
+                    color: red;
+                }
+
+                .top {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+                    column-gap: 1rem;
+                    row-gap: 1.6rem;
+
+                    & > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .3rem;
+
+                        input {
+                            @include formInput();
+                        }
+                    }
+
+                }
+
+                .middle {
+                    display: grid;
+                    row-gap: 1.6rem;
+                    grid-template-columns: 1fr;
+                    padding-top: 1.6rem;
+
+                    & > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .3rem;
+
+                        input {
+                            @include formInput();
+                        }
+                    }
+                }
+
+                .bottom {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+                    column-gap: 1rem;
+                    row-gap: 1.6rem;
+                    padding-top: 1.6rem;
+
+                    & > div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .3rem;
+
+                        input {
+                            @include formInput();
+                        }
+                    }
+                }
+
+                .news-check {
+                    display: flex;
+                    gap: .5rem;
+                    padding-top: 1.6rem;
+                    
+                    .news-checkbox {
+                        width: 1.2rem;
+                        flex-shrink: 0;
+                    }
+                    label::after {
+                        content: '';
+                    }
+                }
+            }
+            .submit-container {
+                display: flex;
+                justify-content: end;
+                padding: 2rem 0;
+                margin-bottom: 3rem;
+
+                button {
+                    padding: .5rem 1.5rem;
+                    font-size: 1.4rem;
+                    font-family: inherit;
+                    background-color: $primaryColor;
+                    color: white;
+                    font-weight: $weightBold;
+                    border: solid yellow;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+
+                    &:active {
+                        transform: scale(.95);
+                    }
                 }
             }
         }

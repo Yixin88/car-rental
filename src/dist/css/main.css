@@ -513,6 +513,7 @@ header .hamburger-menu a:hover {
 
 .booking-popup {
   position: relative;
+  overflow: scroll;
 }
 .booking-popup__overlay {
   position: fixed;
@@ -535,7 +536,7 @@ header .hamburger-menu a:hover {
           transform: translate(-50%, -50%);
   left: 50%;
   width: 100%;
-  max-width: 60rem;
+  max-width: 55rem;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,6 +546,12 @@ header .hamburger-menu a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: scroll;
+}
+.booking-popup__container .content {
+  overflow: scroll;
+}
+.booking-popup__container .title {
+  color: rgb(255, 75, 48);
 }
 .booking-popup__container__header {
   background-color: rgb(255, 75, 48);
@@ -588,6 +595,7 @@ header .hamburger-menu a:hover {
   display: flex;
   padding: 1rem 2rem;
   border-bottom: solid #dbdbdb;
+  gap: 2rem;
 }
 .booking-popup__container__details__left {
   -webkit-box-flex: 1;
@@ -602,6 +610,9 @@ header .hamburger-menu a:hover {
           flex-direction: column;
   gap: 1rem;
 }
+.booking-popup__container__details__left .location, .booking-popup__container__details__left .date {
+  color: #706f7b;
+}
 .booking-popup__container__details__left > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,6 +623,9 @@ header .hamburger-menu a:hover {
           flex-direction: column;
   gap: 2rem;
 }
+.booking-popup__container__details__left > div .asterisk {
+  color: red;
+}
 .booking-popup__container__details__left > div > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,6 +634,7 @@ header .hamburger-menu a:hover {
 }
 .booking-popup__container__details__left > div > div i {
   font-size: 1.5rem;
+  color: #706f7b;
 }
 .booking-popup__container__details__right {
   -webkit-box-flex: 1;
@@ -633,6 +648,9 @@ header .hamburger-menu a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.booking-popup__container__details__right span {
+  color: rgb(255, 75, 48);
+}
 .booking-popup__container__details__right img {
   width: 100%;
   max-width: 30rem;
@@ -640,6 +658,172 @@ header .hamburger-menu a:hover {
       align-self: center;
   justify-self: center;
   margin: auto;
+}
+@media (max-width: 600px) {
+  .booking-popup__container__details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+.booking-popup__container__form-container {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.booking-popup__container__form-container .input-container::after {
+  content: "This field is required.";
+  font-size: 0.7rem;
+  display: block;
+}
+.booking-popup__container__form-container__form label::after {
+  content: " *";
+  color: red;
+}
+.booking-popup__container__form-container__form .top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1.6rem;
+}
+.booking-popup__container__form-container__form .top > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3rem;
+}
+.booking-popup__container__form-container__form .top > div input {
+  padding: 0.7rem 1rem;
+  background-color: #dbdbdb;
+  border: solid #dbdbdb;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: inherit;
+}
+.booking-popup__container__form-container__form .top > div input:hover {
+  border: solid rgb(255, 75, 48);
+}
+.booking-popup__container__form-container__form .middle {
+  display: grid;
+  row-gap: 1.6rem;
+  grid-template-columns: 1fr;
+  padding-top: 1.6rem;
+}
+.booking-popup__container__form-container__form .middle > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3rem;
+}
+.booking-popup__container__form-container__form .middle > div input {
+  padding: 0.7rem 1rem;
+  background-color: #dbdbdb;
+  border: solid #dbdbdb;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: inherit;
+}
+.booking-popup__container__form-container__form .middle > div input:hover {
+  border: solid rgb(255, 75, 48);
+}
+.booking-popup__container__form-container__form .bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1.6rem;
+  padding-top: 1.6rem;
+}
+.booking-popup__container__form-container__form .bottom > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3rem;
+}
+.booking-popup__container__form-container__form .bottom > div input {
+  padding: 0.7rem 1rem;
+  background-color: #dbdbdb;
+  border: solid #dbdbdb;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: inherit;
+}
+.booking-popup__container__form-container__form .bottom > div input:hover {
+  border: solid rgb(255, 75, 48);
+}
+.booking-popup__container__form-container__form .news-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1.6rem;
+}
+.booking-popup__container__form-container__form .news-check .news-checkbox {
+  width: 1.2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.booking-popup__container__form-container__form .news-check label::after {
+  content: "";
+}
+.booking-popup__container__form-container .submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.booking-popup__container__form-container .submit-container button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  background-color: rgb(255, 75, 48);
+  color: white;
+  font-weight: 600;
+  border: solid yellow;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.booking-popup__container__form-container .submit-container button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.booking-popup__container__form-container .submit-container button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .planTrip {
