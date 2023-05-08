@@ -6,7 +6,7 @@ export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, 
   const { activePopUp, setActivePopUp } = useContext(BookingFormPopUp);
 
   const [ successful, setSuccessful ] = useState(false);
-  const [ invalidActive, setInvalidIsActive ] = useState(true);
+  const [ invalidActive, setInvalidIsActive ] = useState(false);
   
   const pickUpTime = useRef();
   const dropOffTime = useRef();
