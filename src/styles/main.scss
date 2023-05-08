@@ -484,6 +484,59 @@ header {
         
         .content {
             overflow: scroll;
+
+            &.successful {
+                overflow: hidden;
+                height: 100vh;
+            }
+
+            .booking-successful {
+                margin: 0 auto;
+                text-align: center;
+                display: none;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                position: relative;
+                i {
+                    color: rgb(1, 180, 1);
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                }
+    
+                p {
+                    font-size: 1.5rem;
+                    font-weight: $weightBold;
+                    margin-bottom: 1rem;
+                }
+
+                button {
+                    padding: .8rem 2rem;
+                    background-color: $primaryColor;
+                    font-family: inherit;
+                    font-weight: $weightSemiBold;
+                    font-size: 1.2rem;
+                    color: white;
+                    border-radius: .2rem;
+                    border: none;
+                    box-shadow: $primaryButtonShadow;
+                    transition: .2s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: $primaryButtonHoverShadow;
+                        transform: scale(1.05);
+                    }
+
+                    &:active {
+                        transform: scale(.95);
+                    }
+                }
+                
+                &.successful {
+                    display: block;
+                }
+            }
         }
 
         .title {
@@ -522,6 +575,10 @@ header {
                 color: $grayTextColor;
                 font-weight: $weightSemiBold;
             }
+
+            &.successful {
+                display: none;
+            }
         }
 
         &__details {
@@ -529,6 +586,10 @@ header {
             padding: 1rem 2rem;
             border-bottom: solid $inputBackgroundColor;
             gap: 2rem;
+
+            &.successful {
+                display: none;
+            }
             
             &__left {
                 flex: 1 1 0;
@@ -593,6 +654,10 @@ header {
             display: flex;
             flex-direction: column;
             gap: 1rem;
+
+            &.successful {
+                display: none;
+            }
 
             .input-container::after {
                 content: 'This field is required.';
@@ -700,6 +765,10 @@ header {
                     }
                 }
             }
+        }
+
+        @include md {
+            top: 50%;
         }
     }
 }

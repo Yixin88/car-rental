@@ -33,7 +33,10 @@ export default function Booking() {
         return
     }
     e.preventDefault();
+    setInvalidIsActive(false);
     setActivePopUp(true);
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = "no";
   }
   
 

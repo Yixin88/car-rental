@@ -566,6 +566,58 @@ header .hamburger-menu a:hover {
 .booking-popup__container .content {
   overflow: scroll;
 }
+.booking-popup__container .content.successful {
+  overflow: hidden;
+  height: 100vh;
+}
+.booking-popup__container .content .booking-successful {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: relative;
+}
+.booking-popup__container .content .booking-successful i {
+  color: rgb(1, 180, 1);
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.booking-popup__container .content .booking-successful p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.booking-popup__container .content .booking-successful button {
+  padding: 0.8rem 2rem;
+  background-color: rgb(255, 75, 48);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.2rem;
+  border: none;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+          box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.booking-popup__container .content .booking-successful button:hover {
+  -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+          box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.booking-popup__container .content .booking-successful button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.booking-popup__container .content .booking-successful.successful {
+  display: block;
+}
 .booking-popup__container .title {
   color: rgb(255, 75, 48);
 }
@@ -605,6 +657,9 @@ header .hamburger-menu a:hover {
   color: #706f7b;
   font-weight: 500;
 }
+.booking-popup__container__info.successful {
+  display: none;
+}
 .booking-popup__container__details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,6 +667,9 @@ header .hamburger-menu a:hover {
   padding: 1rem 2rem;
   border-bottom: solid #dbdbdb;
   gap: 2rem;
+}
+.booking-popup__container__details.successful {
+  display: none;
 }
 .booking-popup__container__details__left {
   -webkit-box-flex: 1;
@@ -697,6 +755,9 @@ header .hamburger-menu a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+.booking-popup__container__form-container.successful {
+  display: none;
 }
 .booking-popup__container__form-container .input-container::after {
   content: "This field is required.";
@@ -840,6 +901,11 @@ header .hamburger-menu a:hover {
 .booking-popup__container__form-container .submit-container button:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+@media (max-width: 768px) {
+  .booking-popup__container {
+    top: 50%;
+  }
 }
 
 .planTrip {
