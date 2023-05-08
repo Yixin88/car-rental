@@ -64,8 +64,10 @@ export default function Booking() {
                     </div>
                     <select name="" id="carType" value={carPicked} 
                     onChange={(e) => {
-                        setCarType(e.target.value); 
-                        setCarImg(cars.filter(item => item.name === e.target.value)[0].image)}
+                        setCarType(e.target.value);
+                        if (e.target.value) {
+                            setCarImg(cars.filter(item => item.name === e.target.value)[0].image)}
+                        } 
                     } required >
                         <option value="">Select your car type</option>
                         <option value="Audi A1 S-Line">Audi A1 S-Line</option>
