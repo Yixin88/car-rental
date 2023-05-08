@@ -92,8 +92,6 @@ export default function FleetContext({children}) {
     },
   ])
 
-  // const [car, setCar] = useState(20)
-
   return (
     <FleetArray.Provider value={{cars, setCars}}>
       {children}
