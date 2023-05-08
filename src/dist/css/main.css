@@ -1222,20 +1222,21 @@ header .hamburger-menu a:hover {
   -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
           box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
 }
-.faq-section__container__questions__container .question-container p {
+.faq-section__container__questions__container .question-container .answer-container {
+  display: grid;
+  grid-template-rows: 0fr;
   color: #706f7b;
   background-color: white;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+.faq-section__container__questions__container .question-container .answer-container p {
   overflow: hidden;
-  max-height: 0;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
   padding: 0 2rem;
 }
-.faq-section__container__questions__container .question-container p.active {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  padding: 2rem;
+.faq-section__container__questions__container .question-container .answer-container.active {
+  padding: 2rem 0;
+  grid-template-rows: 1fr;
 }
 
 .download-section {

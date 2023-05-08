@@ -957,20 +957,25 @@ header {
                         box-shadow: $primaryButtonHoverShadow;
                     }
                 }
-                
-                p {
+
+                .answer-container {
+                    display: grid;
+                    grid-template-rows: 0fr;
                     color: $grayTextColor;
                     background-color: white;
-                    overflow: hidden;
-                    max-height: 0;
-                    transition: .2s ease-out;
-                    padding: 0 2rem;
+                    transition: .3s ease-out;
 
+                    p { 
+                        overflow: hidden;
+                        padding: 0 2rem;
+                    }
+                    
                     &.active {
-                        max-height: fit-content;
-                        padding: 2rem;
+                        padding: 2rem 0;
+                        grid-template-rows: 1fr;
                     }
                 }
+                
             }
         }
     }

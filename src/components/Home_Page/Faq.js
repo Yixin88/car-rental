@@ -47,7 +47,9 @@ export default function Faq() {
                   <h4>{questions.indexOf(question)+1}. {question.question}</h4>
                   <i className={showAnswer === index ? 'fa-solid fa-angle-down active': 'fa-solid fa-angle-down'}></i>
                 </div>
-                <p className={showAnswer === index ? 'active':null}>{question.answer}</p>
+                <div className={showAnswer === index ? 'answer-container active':'answer-container'}>
+                  <p>{question.answer}</p>
+                </div>
               </div>
             )
           })}
