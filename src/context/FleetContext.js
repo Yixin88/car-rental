@@ -92,8 +92,38 @@ export default function FleetContext({children}) {
     },
   ])
 
+  const [ rentalLocations, setRentalLocations ] = useState(
+    [
+      {
+        location: 'London',
+        id: 1
+      },
+      {
+        location: 'Manchester',
+        id: 2
+      },
+      {
+        location: 'Birmingham',
+        id: 3
+      },
+      {
+        location: 'Bournemouth',
+        id: 4
+      },
+      {
+        location: 'Liverpool',
+        id: 5
+      },
+      {
+        location: 'Edinburgh',
+        id: 6
+      },
+
+    ]
+  )
+
   return (
-    <FleetArray.Provider value={{cars, setCars}}>
+    <FleetArray.Provider value={{cars, setCars, rentalLocations, setRentalLocations}}>
       {children}
     </FleetArray.Provider>
   )

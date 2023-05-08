@@ -8,7 +8,7 @@ export default function Booking() {
 
   const { carPicked } = useContext(CarPick);
   const { setActivePopUp } = useContext(BookingFormPopUp);
-  const { cars } = useContext(FleetArray);
+  const { cars, rentalLocations } = useContext(FleetArray);
 
   const [ invalidActive, setInvalidIsActive ] = useState(false);
   const [ carType, setCarType ] = useState();
@@ -72,12 +72,11 @@ export default function Booking() {
                         } 
                     } required >
                         <option value="">Select your car type</option>
-                        <option value="Audi A1 S-Line">Audi A1 S-Line</option>
-                        <option value="VW Golf 6">VW Golf 6</option>
-                        <option value="Toyota Camry">Toyota Camry</option>
-                        <option value="BMW 320 ModernLine">BMW 320 ModernLine</option>
-                        <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
-                        <option value="VW Passat CC">VW Passat CC</option>
+                        {cars.map(car => {
+                            return (
+                                <option key={car.id} value={car.name}>{car.name}</option>
+                            )
+                        })}
                     </select>
                 </div>
                 <div className='bookingForm__element'>
@@ -87,12 +86,11 @@ export default function Booking() {
                     </div>
                     <select  name="" id="pickUpLocation" onChange={(e) => setPickUpLocation(e.target.value)} required>
                         <option value="">Select Pick Up Location</option>
-                        <option value="London">London</option>
-                        <option value="Manchester">Manchester</option>
-                        <option value="Birmingham">Birmingham</option>
-                        <option value="Bournemouth">Bournemouth</option>
-                        <option value="Liverpool">Liverpool</option>
-                        <option value="Edinburgh">Edinburgh</option>
+                        {rentalLocations.map(location => {
+                            return (
+                                <option key={location.id} value={location.location}>{location.location}</option>
+                            )
+                        })}
                     </select>
                 </div>
                 <div className='bookingForm__element'>
@@ -102,12 +100,11 @@ export default function Booking() {
                     </div>
                     <select name="" id="dropOffLocation" onChange={(e) => setDropOffLocation(e.target.value)} required>
                         <option value="">Select Drop Up Location</option>
-                        <option value="London">London</option>
-                        <option value="Manchester">Manchester</option>
-                        <option value="Birmingham">Birmingham</option>
-                        <option value="Bournemouth">Bournemouth</option>
-                        <option value="Liverpool">Liverpool</option>
-                        <option value="Edinburgh">Edinburgh</option>
+                        {rentalLocations.map(location => {
+                            return (
+                                <option key={location.id} value={location.location}>{location.location}</option>
+                            )
+                        })}
                     </select>
                 </div>
                 <div className='bookingForm__element'>
