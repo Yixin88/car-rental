@@ -97,6 +97,7 @@ header {
                 &:hover {
                     background-color: darken($color: $primaryColor, $amount: 10%);
                     box-shadow: $primaryButtonHoverShadow;
+                    transform: scale(1.05);
                 }
             }
 
@@ -179,6 +180,7 @@ header {
                     background-color: white;
                     border: solid black;
                     color: black;
+                    transform: scale(1.05);
                 }
             }
 
@@ -192,6 +194,7 @@ header {
                     border: solid darken($color: $primaryColor, $amount: 10%);
                     box-shadow: $primaryButtonHoverShadow;
                     color: white;
+                    transform: scale(1.05);
                 }
             }
         }
@@ -204,6 +207,7 @@ header {
 
             &:hover {
                 color: $primaryColor;
+                transform: scale(1.05);
             }
         }
     }
@@ -312,6 +316,7 @@ header {
                             background-color: darken($color: $primaryColor, $amount: 10%);
                             border: solid darken($color: $primaryColor, $amount: 10%);
                             box-shadow: $primaryButtonHoverShadow;
+                            transform: scale(1.05);
                         }
                     }
 
@@ -323,6 +328,7 @@ header {
                         &:hover {
                             background-color: white;
                             color: black;
+                            transform: scale(1.05);
                         }
                     }
                 }
@@ -458,6 +464,7 @@ header {
                 &:hover {
                     background-color: darken($color: $primaryColor, $amount: 10%);
                     box-shadow: $primaryButtonHoverShadow;
+                    transform: scale(1.02);
                 }
             }
 
@@ -1130,6 +1137,7 @@ header {
                     &:hover {
                         background-color: darken($color: $primaryColor, $amount: 10%);
                         box-shadow: $primaryButtonHoverShadow;
+                        transform: scale(1.05);
                     }
                 }
 
@@ -1527,6 +1535,7 @@ header {
             &:hover {
                 background-color: darken($color: $primaryColor, $amount: 10%);
                 box-shadow: $primaryButtonHoverShadow;
+                transform: scale(1.02);
             }
         }
 
