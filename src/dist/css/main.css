@@ -420,8 +420,18 @@ header .hamburger-menu a:hover {
   z-index: 5;
   background-color: white;
 }
+.booking-section .booking .invalid-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.booking-section .booking .invalid-container.active {
+  grid-template-rows: 1fr;
+}
 .booking-section .booking__invalid {
   display: none;
+  overflow: hidden;
 }
 .booking-section .booking__invalid.active {
   display: -webkit-box;
@@ -434,12 +444,12 @@ header .hamburger-menu a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: red;
-  padding: 0.2rem 0.5rem;
+  padding: 0 0.5rem;
   border-radius: 0.3rem;
   color: white;
   gap: 2rem;
-  -webkit-animation: popOut 1s ease-in-out 1;
-          animation: popOut 1s ease-in-out 1;
+  -webkit-animation: popOut 1s ease-in-out 1 0.2s;
+          animation: popOut 1s ease-in-out 1 0.2s;
 }
 @-webkit-keyframes popOut {
   0% {
@@ -902,6 +912,15 @@ header .hamburger-menu a:hover {
 }
 .booking-popup__container__form-container__form .news-check label::after {
   content: "";
+}
+.booking-popup__container__form-container .invalid-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.booking-popup__container__form-container .invalid-container.active {
+  grid-template-rows: 1fr;
 }
 .booking-popup__container__form-container .submit-container {
   display: -webkit-box;

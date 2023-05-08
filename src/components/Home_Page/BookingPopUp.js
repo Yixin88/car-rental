@@ -154,9 +154,11 @@ export default function BookingPopUp({ pickUpDate, dropOffDate, pickupLocation, 
               </div>
             </div>
 
-            <div className={invalidActive ? 'booking__invalid active': 'booking__invalid'}>
-                <p>Please Enter All Fields!</p>
-                <i className="fa-solid fa-xmark" onClick={() => setInvalidIsActive(false)}></i>
+            <div className={`invalid-container ${invalidActive && 'active'}`}>
+              <div className={invalidActive ? 'booking__invalid active': 'booking__invalid'}>
+                  <p>Please Enter All Fields!</p>
+                  <i className="fa-solid fa-xmark" onClick={() => setInvalidIsActive(false)}></i>
+              </div>
             </div>
 
             <div className='submit-container'>

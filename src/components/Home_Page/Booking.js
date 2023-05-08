@@ -52,9 +52,11 @@ export default function Booking() {
     <section className='booking-section' id='booking-section'>
         <div ref={invalidContainer} className='booking'>
             <h2>Book a car</h2>
-            <div className={invalidActive ? 'booking__invalid active': 'booking__invalid'}>
-                <p>{errorMsg}</p>
-                <i className="fa-solid fa-xmark" onClick={closeInvalidContainer}></i>
+            <div className={`invalid-container ${invalidActive && 'active'}`}>
+                <div className={invalidActive ? 'booking__invalid active': 'booking__invalid'}>
+                    <p>{errorMsg}</p>
+                    <i className="fa-solid fa-xmark" onClick={closeInvalidContainer}></i>
+                </div>
             </div>
             <form className='bookingForm' noValidate>
                 <div className='bookingForm__element'>

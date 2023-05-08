@@ -22,6 +22,16 @@
     }
 }
 
+@mixin accordion {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .2s ease-in-out;
+
+    &.active {
+        grid-template-rows: 1fr;
+    }
+}
+
 header {
 
     position: relative;
@@ -346,8 +356,14 @@ header {
         z-index: 5;
         background-color: white;
 
+        .invalid-container {
+            @include accordion();
+        }
+
         &__invalid {
             display: none;
+            overflow: hidden;
+            // transition: .2s ease-in-out;
 
             &.active {
                 @keyframes popOut{
@@ -368,11 +384,11 @@ header {
                 align-items: center;
                 justify-content: space-between;
                 background-color: red;
-                padding: .2rem .5rem;
+                padding: 0 .5rem;
                 border-radius: .3rem;
                 color: white;
                 gap: 2rem;
-                animation: popOut 1s ease-in-out 1 ;
+                animation: popOut 1s ease-in-out 1 .2s;
             }
 
             i {
@@ -755,6 +771,11 @@ header {
                     }
                 }
             }
+
+            .invalid-container {
+                @include accordion();
+            }
+
             .submit-container {
                 display: flex;
                 justify-content: end;
