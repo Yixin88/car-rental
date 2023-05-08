@@ -30,10 +30,10 @@ export default function Header() {
             </div>
         </nav>
 
-        <i class="fa-solid fa-bars hamburger-btn" onClick={() => {setActiveMenu(true)}}></i>
+        <i className="fa-solid fa-bars hamburger-btn" onClick={() => {setActiveMenu(true)}}></i>
 
         <nav className={activeMenu ? 'hamburger-menu active' : 'hamburger-menu'}>
-            <i class="fa-solid fa-xmark close-btn" onClick={() => {setActiveMenu(false)}}></i>
+            <i className="fa-solid fa-xmark close-btn" onClick={() => {setActiveMenu(false)}}></i>
             <NavLink onClick={() => {setActiveMenu(false)}}>Home</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>About</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Vehicle Models</NavLink>

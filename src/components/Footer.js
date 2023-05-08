@@ -12,11 +12,11 @@ export default function Footer() {
               <p>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
             </li>
             <li className='contact-info'>
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
               <a className='contact-info' href="tel:+44-123-4567">+44-123-4567</a>
             </li>
             <li className='contact-info'>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <a className='contact-info' href="mailto:contact@carrental.com">contact@carrental.com</a>
             </li>
           </ul>
