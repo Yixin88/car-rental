@@ -6,12 +6,12 @@ import { FleetArray } from '../../context/FleetContext';
 
 export default function Booking() {
 
-  const { carPicked } = useContext(CarPick);
+  const { carPicked, setCarPicked } = useContext(CarPick);
   const { setActivePopUp } = useContext(BookingFormPopUp);
   const { cars, rentalLocations } = useContext(FleetArray);
 
   const [ invalidActive, setInvalidIsActive ] = useState(false);
-  const [ carType, setCarType ] = useState();
+//   const [ carType, setCarType ] = useState();
   const [ pickUpLocation, setPickUpLocation ] = useState();
   const [ dropOffLocation, setDropOffLocation ] = useState();
   const [ pickUpDate, setPickUpDate ] = useState();
@@ -28,7 +28,7 @@ export default function Booking() {
   }
 
   function checkField(e) {
-      if (!carType || !pickUpLocation|| !dropOffLocation|| !pickUpDate || !dropOffDate ) {
+      if (!carPicked || !pickUpLocation|| !dropOffLocation|| !pickUpDate || !dropOffDate ) {
         e.preventDefault()
         setErrorMsg('Please Enter All Fields!');
         setInvalidIsActive(true);
@@ -38,6 +38,10 @@ export default function Booking() {
         setErrorMsg('Drop-off date must be later than pick-up date');
         setInvalidIsActive(true);
         return
+    }
+
+    if (carPicked) {
+        setCarImg(cars.filter(item => item.name === carPicked)[0].image)
     }
 
     e.preventDefault();
@@ -64,13 +68,7 @@ export default function Booking() {
                         <i className='fa-solid fa-car'></i>
                         <label htmlFor='carType'>Select Your Car Type <b>*</b></label>
                     </div>
-                    <select name="" id="carType" value={carPicked} 
-                    onChange={(e) => {
-                        setCarType(e.target.value);
-                        if (e.target.value) {
-                            setCarImg(cars.filter(item => item.name === e.target.value)[0].image)}
-                        } 
-                    } required >
+                    <select name="" id="carType" value={carPicked} onChange={e => setCarPicked(e.target.value)} required >
                         <option value="">Select your car type</option>
                         {cars.map(car => {
                             return (
@@ -125,7 +123,7 @@ export default function Booking() {
             </form>
         </div>
 
-        <BookingPopUp pickUpDate={pickUpDate} dropOffDate={dropOffDate} pickupLocation={pickUpLocation} dropOffLocation={dropOffLocation} carName={carType} carImg={carImg}/>
+        <BookingPopUp pickUpDate={pickUpDate} dropOffDate={dropOffDate} pickupLocation={pickUpLocation} dropOffLocation={dropOffLocation} carName={carPicked} carImg={carImg}/>
     </section>
   )
 }
