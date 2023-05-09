@@ -969,6 +969,7 @@ header .hamburger-menu a:hover {
 @media (max-width: 768px) {
   .booking-popup__container {
     top: 50%;
+    border: none;
   }
 }
 
