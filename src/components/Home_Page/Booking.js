@@ -48,11 +48,11 @@ export default function Booking() {
     setInvalidIsActive(false);
     setActivePopUp(true);
 
-    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    if (vw > 600) {
-        document.documentElement.style.overflow = 'hidden';
-        document.body.scroll = "no";
-    }
+    // const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    // if (vw > 600) {
+    //     document.documentElement.style.overflow = 'hidden';
+    //     document.body.scroll = "no";
+    // }
   }
   
 
