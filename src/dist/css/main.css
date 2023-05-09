@@ -231,6 +231,14 @@ header .hamburger-menu a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+@media (orientation: landscape) {
+  header .hamburger-menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 5rem;
+  }
+}
 @media (max-width: 1024px) {
   header .nav-bar__links, header .nav-bar__buttons {
     display: none;
@@ -283,6 +291,11 @@ header .hamburger-menu a:hover {
   max-width: 100rem !important;
   padding: 0 2rem;
   padding-top: 10rem;
+}
+@media (orientation: landscape) {
+  .home-banner .container {
+    height: auto;
+  }
 }
 .home-banner .container__img {
   width: 65%;
