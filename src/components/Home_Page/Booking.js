@@ -49,12 +49,10 @@ export default function Booking() {
     setActivePopUp(true);
 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    document.documentElement.style.overflow = 'hidden';
-        // document.body.scroll = "no";
-    // if (vw > 600) {
-    //     document.documentElement.style.overflow = 'hidden';
-    //     document.body.scroll = "no";
-    // }
+    if (vw > 600) {
+        document.documentElement.style.overflow = 'hidden';
+        document.body.scroll = "no";
+    }
   }
   
 
