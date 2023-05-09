@@ -702,6 +702,9 @@ header .hamburger-menu a:hover {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .booking-popup__container__header i {
   font-size: 1.7rem;
@@ -715,7 +718,7 @@ header .hamburger-menu a:hover {
 }
 .booking-popup__container__info {
   background-color: #ffeae6;
-  padding: 1rem 2rem;
+  padding: 4.5rem 2rem 1rem 2rem;
 }
 .booking-popup__container__info h3 {
   color: rgb(255, 75, 48);

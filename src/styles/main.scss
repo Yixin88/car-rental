@@ -598,6 +598,9 @@ header {
             padding: .5rem 1rem;
             align-items: center;
             color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
 
             i {
                 font-size: 1.7rem;
@@ -612,7 +615,7 @@ header {
 
         &__info {
             background-color: #ffeae6;
-            padding: 1rem 2rem;
+            padding: 4.5rem 2rem 1rem 2rem;
 
             h3 {
                 color: $primaryColor;
