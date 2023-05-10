@@ -16,8 +16,8 @@ export default function Header() {
             </div>
 
             <div className='nav-bar__links'>
-                <NavLink>Home</NavLink>
-                <NavLink>About</NavLink>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='about'>About</NavLink>
                 <NavLink>Vehicle Models</NavLink>
                 <NavLink>Testimonials</NavLink>
                 <NavLink>Our Team</NavLink>
@@ -34,8 +34,8 @@ export default function Header() {
 
         <nav className={activeMenu ? 'hamburger-menu active' : 'hamburger-menu'}>
             <i className="fa-solid fa-xmark close-btn" onClick={() => {setActiveMenu(false)}}></i>
-            <NavLink onClick={() => {setActiveMenu(false)}}>Home</NavLink>
-            <NavLink onClick={() => {setActiveMenu(false)}}>About</NavLink>
+            <NavLink to='/' onClick={() => {setActiveMenu(false)}}>Home</NavLink>
+            <NavLink to='about' onClick={() => {setActiveMenu(false)}}>About</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Vehicle Models</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Testimonials</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Our Team</NavLink>
