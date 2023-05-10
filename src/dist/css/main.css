@@ -1950,4 +1950,48 @@ header .hamburger-menu a:hover {
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+}
+
+.subPage-banner {
+  height: 25rem;
+  position: relative;
+  background-image: url("../../images/hero/heroes-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.subPage-banner .bg-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.92);
+}
+.subPage-banner__container {
+  max-width: 100rem !important;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subPage-banner__container__heading {
+  padding: 4rem;
+  z-index: 1;
+}
+.subPage-banner__container h3 {
+  font-size: 2rem;
+}
+.subPage-banner__container h4 {
+  font-size: 1.2rem;
+}
+@media (max-width: 480px) {
+  .subPage-banner__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

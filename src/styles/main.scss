@@ -1608,3 +1608,50 @@ header {
       opacity: 1;
     }
 }
+
+
+// About Page
+.subPage-banner {
+    height: 25rem;
+    position: relative;
+    background-image: url('../../images/hero/heroes-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    .bg-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: hsla(0,0%,100%,.92);
+    }
+    
+    &__container {
+        max-width: $maxWidth;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &__heading {
+            padding: 4rem;
+            z-index: 1;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+        }
+
+        @include xs {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+
+    
+}
