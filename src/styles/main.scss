@@ -1697,11 +1697,19 @@ header {
                     span {
                         display: flex;
                         gap: 1rem;
-
+                        
                         h4 {
+                            transform: translateY(25px);
+                            transition: .3s ease-in-out;
+                            opacity: 0;
                             flex: 1 1 0;
                             font-size: 2.5rem;
                             text-align: end;
+
+                            &.active {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
                         }
                         
 
