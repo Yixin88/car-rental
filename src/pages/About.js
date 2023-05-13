@@ -9,7 +9,7 @@ export default function About() {
   const url = useLocation().pathname;
   return (
     <>
-      <SubPageBanner pageTitle={url}/>
+      <SubPageBanner pageTitle={url} />
       <AboutCompany />
       <PlanTripBanner />
       <CallBanner />
