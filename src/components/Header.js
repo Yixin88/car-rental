@@ -10,9 +10,9 @@ export default function Header() {
     <header>
         <nav className='nav-bar'>
             <div className='nav-bar__logo-image'>
-                <a href="#">
+                <Link to='/'>
                     <img src={Logo} alt="Car Rental Logo" />
-                </a>
+                </Link>
             </div>
 
             <div className='nav-bar__links'>
