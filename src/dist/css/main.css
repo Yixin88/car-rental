@@ -74,7 +74,7 @@ header .nav-bar__links a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-header .nav-bar__links a:hover {
+header .nav-bar__links a:hover, header .nav-bar__links a.active {
   color: rgb(255, 75, 48);
 }
 header .nav-bar__buttons {
@@ -97,6 +97,11 @@ header .nav-bar__buttons a {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+header .nav-bar__buttons a:hover {
+  color: rgb(255, 75, 48);
 }
 header .nav-bar__buttons__register {
   padding: 1rem 1.8rem;
