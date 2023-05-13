@@ -18,10 +18,10 @@ export default function Header() {
             <div className='nav-bar__links'>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
-                <NavLink>Vehicle Models</NavLink>
+                <NavLink to='vehicle'>Vehicle Models</NavLink>
                 <NavLink to='testimonials'>Testimonials</NavLink>
-                <NavLink>Our Team</NavLink>
-                <NavLink>Contact</NavLink>
+                <NavLink to='team'>Our Team</NavLink>
+                <NavLink to='contact'>Contact</NavLink>
             </div>
 
             <div className='nav-bar__buttons'>
@@ -36,10 +36,10 @@ export default function Header() {
             <i className="fa-solid fa-xmark close-btn" onClick={() => {setActiveMenu(false)}}></i>
             <NavLink to='/' onClick={() => {setActiveMenu(false)}}>Home</NavLink>
             <NavLink to='about' onClick={() => {setActiveMenu(false)}}>About</NavLink>
-            <NavLink onClick={() => {setActiveMenu(false)}}>Vehicle Models</NavLink>
+            <NavLink to='vehicle' onClick={() => {setActiveMenu(false)}}>Vehicle Models</NavLink>
             <NavLink to='testimonials' onClick={() => {setActiveMenu(false)}}>Testimonials</NavLink>
-            <NavLink onClick={() => {setActiveMenu(false)}}>Our Team</NavLink>
-            <NavLink onClick={() => {setActiveMenu(false)}}>Contact</NavLink>
+            <NavLink to='team' onClick={() => {setActiveMenu(false)}}>Our Team</NavLink>
+            <NavLink to='contact' onClick={() => {setActiveMenu(false)}}>Contact</NavLink>
             <Link className='mobile-signIn-btn signIn-btn'>Sign In</Link>
             <Link className='mobile-signIn-btn register-btn'>Register</Link>
         </nav>
