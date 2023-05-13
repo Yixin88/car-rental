@@ -2266,4 +2266,9 @@ header .hamburger-menu a:hover {
 }
 .people-grid-section__container .people-card .person-detail span {
   color: #706f7b;
+}
+@media (max-width: 480px) {
+  .people-grid-section__container {
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
