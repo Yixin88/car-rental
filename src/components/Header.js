@@ -19,7 +19,7 @@ export default function Header() {
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
                 <NavLink>Vehicle Models</NavLink>
-                <NavLink>Testimonials</NavLink>
+                <NavLink to='testimonials'>Testimonials</NavLink>
                 <NavLink>Our Team</NavLink>
                 <NavLink>Contact</NavLink>
             </div>
@@ -37,7 +37,7 @@ export default function Header() {
             <NavLink to='/' onClick={() => {setActiveMenu(false)}}>Home</NavLink>
             <NavLink to='about' onClick={() => {setActiveMenu(false)}}>About</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Vehicle Models</NavLink>
-            <NavLink onClick={() => {setActiveMenu(false)}}>Testimonials</NavLink>
+            <NavLink to='testimonials' onClick={() => {setActiveMenu(false)}}>Testimonials</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Our Team</NavLink>
             <NavLink onClick={() => {setActiveMenu(false)}}>Contact</NavLink>
             <Link className='mobile-signIn-btn signIn-btn'>Sign In</Link>
