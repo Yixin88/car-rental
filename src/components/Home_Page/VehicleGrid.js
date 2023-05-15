@@ -1,57 +1,68 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AudiA1 from '../../images/cars-big/audia1-2.png'
+import { FleetArray } from '../../context/FleetContext'
 
 export default function VehicleGrid() {
+
+  const { cars } = useContext(FleetArray);
+
   return (
     <section className='vehicle-grid-section'>
       <div className='vehicle-grid-section__container'>
+
+        {cars.map(car => {
+          
+          return(
+            <div className='vehicle-card' key={car.id}>
+
+              <div className='vehicle-card__image-container'>
+                <img src={car.image2} alt="" />
+              </div>
+
+              <div className='vehicle-card__details-container'>
+                <div className='vehicle-card__details-container__top'>
+                  <div>
+                    <h3>{car.model}</h3>
+                    <i className='fa-solid fa-star'></i>
+                    <i className='fa-solid fa-star'></i>
+                    <i className='fa-solid fa-star'></i>
+                    <i className='fa-solid fa-star'></i>
+                    <i className='fa-solid fa-star'></i>
+                  </div>
+                  <div>
+                    <h3>£{car.price}</h3>
+                    <span>per day</span>
+                  </div>
+                </div>
+
+                <div className='vehicle-card__details-container__middle'>
+                  <div>
+                    <i className='fa-solid fa-car-side'></i>
+                    <span>{car.mark}</span>
+                  </div>
+                  <div>
+                    <span>{car.doors}</span>
+                    <i className="fa-solid fa-door-open"></i>
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-gear"></i>
+                    <span>{car.transmission}</span>
+                  </div>
+                  <div>
+                    <span>{car.fuel}</span>
+                    <i className="fa-solid fa-gas-pump"></i>
+                  </div>
+                </div>
+
+                <a className='book-button' href="#booking-section">Book Now</a>
+              </div>
+            </div>
+          )
         
-        <div className='vehicle-card'>
+        })}
+        
 
-          <div className='vehicle-card__image-container'>
-            <img src={AudiA1} alt="" />
-          </div>
-
-          <div className='vehicle-card__details-container'>
-            <div>
-              <div>
-                <h3>Audi A1</h3>
-                <i className='fa-solid fa-star'></i>
-                <i className='fa-solid fa-star'></i>
-                <i className='fa-solid fa-star'></i>
-                <i className='fa-solid fa-star'></i>
-                <i className='fa-solid fa-star'></i>
-              </div>
-              <div>
-                <h3>£45</h3>
-                <span>per day</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <i className='fa-solid fa-car-side'></i>
-                <span>Audi</span>
-              </div>
-              <div>
-                <i class="fa-solid fa-door-open"></i>
-                <span>5</span>
-              </div>
-              <div>
-                <i class="fa-solid fa-gear"></i>
-                <span>Manual</span>
-              </div>
-              <div>
-                <i class="fa-solid fa-gas-pump"></i>
-                <span>Petrol</span>
-              </div>
-            </div>
-
-            <a href="#booking-section">Book Now</a>
-          </div>
-
-
-        </div>
+        
 
 
       </div>
