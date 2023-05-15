@@ -53,9 +53,9 @@ export default function People() {
 
         {teamList.map(person => {
           return (
-            <div className='people-card'>
+            <div className='people-card' key={person.id}>
               <div className='image-container'>
-                <img src={person.image} alt="" />
+                <img src={person.image} alt={person.name} />
               </div>
 
               <div className='person-detail'>
