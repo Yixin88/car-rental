@@ -25,8 +25,8 @@ export default function VehicleGrid() {
           return(
             <div className='vehicle-card' key={car.id}>
 
-              <div className='vehicle-card__image-container' onClick={() => {navigateToBookingSection(car.name)}}>
-                <img src={car.image2} alt="" />
+              <div className='vehicle-card__image-container'>
+                <a href='/#booking-section' onClick={() => {navigateToBookingSection(car.name)}}><img src={car.image2} alt="" /></a>
               </div>
 
               <div className='vehicle-card__details-container'>
