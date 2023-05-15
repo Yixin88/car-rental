@@ -8,6 +8,7 @@ import ChooseUs from '../components/Home_Page/ChooseUs'
 import Review from '../components/Home_Page/Review'
 import Faq from '../components/Home_Page/Faq'
 import Download from '../components/Home_Page/Download'
+import ScrollToTop from '../components/util/ScrollToTop'
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
         <Review />
         <Faq />
         <Download />
+        <ScrollToTop />
     </>
   )
 }
