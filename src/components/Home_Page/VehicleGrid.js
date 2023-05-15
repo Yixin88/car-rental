@@ -1,10 +1,20 @@
 import React, { useContext } from 'react'
 import AudiA1 from '../../images/cars-big/audia1-2.png'
 import { FleetArray } from '../../context/FleetContext'
+import { Link, useNavigate } from 'react-router-dom';
+import { CarPick } from '../../context/SelectedCarContext';
 
 export default function VehicleGrid() {
 
   const { cars } = useContext(FleetArray);
+  const { setCarPicked } = useContext(CarPick);
+
+  let navigate = useNavigate();
+
+  function navigateToBookingSection(car) {
+    navigate('/#booking-section');
+    setCarPicked(car);
+  }
 
   return (
     <section className='vehicle-grid-section'>
@@ -54,7 +64,7 @@ export default function VehicleGrid() {
                   </div>
                 </div>
 
-                <a className='book-button' href="#booking-section">Book Now</a>
+                <a className='book-button' href='#booking-section' onClick={() => {navigateToBookingSection(car.name)}}>Book Now</a>
               </div>
             </div>
           )
