@@ -1,6 +1,7 @@
 import React from 'react'
 import SubPageBanner from '../components/SubPageBanner'
 import { useLocation } from 'react-router-dom'
+import VehicleGrid from '../components/Home_Page/VehicleGrid';
 
 export default function Vehicle() {
 
@@ -9,6 +10,7 @@ export default function Vehicle() {
   return (
     <>
       <SubPageBanner pageTitle={url} additionalEndText='models' />
+      <VehicleGrid />
     </>
   )
 }
