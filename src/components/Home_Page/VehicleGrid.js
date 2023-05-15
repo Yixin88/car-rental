@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
-import AudiA1 from '../../images/cars-big/audia1-2.png'
 import { FleetArray } from '../../context/FleetContext'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { CarPick } from '../../context/SelectedCarContext';
 
 export default function VehicleGrid() {

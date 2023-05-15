@@ -11,7 +11,7 @@ export default function Booking() {
   const { cars, rentalLocations } = useContext(FleetArray);
 
   const [ invalidActive, setInvalidIsActive ] = useState(false);
-//   const [ carType, setCarType ] = useState();
+
   const [ pickUpLocation, setPickUpLocation ] = useState();
   const [ dropOffLocation, setDropOffLocation ] = useState();
   const [ pickUpDate, setPickUpDate ] = useState();
