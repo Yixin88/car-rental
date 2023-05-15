@@ -5,6 +5,12 @@ import ToyotaImg from '../images/cars-big/toyotacamry.jpg'
 import BmwImg from '../images/cars-big/bmw320.jpg'
 import MercImg from '../images/cars-big/benz.jpg'
 import VwPassatImg from '../images/cars-big/passatcc.jpg'
+import AudiImg2 from '../images/cars-big/audia1-2.png'
+import VwGolfImg2 from '../images/cars-big/golf6-2.png'
+import ToyotaImg2 from '../images/cars-big/toyotacamry-2.png'
+import BmwImg2 from '../images/cars-big/bmw320-2.png'
+import MercImg2 from '../images/cars-big/benz-2.png'
+import VwPassatImg2 from '../images/cars-big/passatcc-2.png'
 
 
 export const FleetArray = createContext();
@@ -14,16 +20,17 @@ export default function FleetContext({children}) {
   const [cars, setCars] = useState([
     {
       name: "Audi A1 S-Line",
-      model: "Audi",
-      mark: "A1",
-      year: 2012,
+      model: "A1 S-Line",
+      mark: "Audi",
+      year: 2015,
       doors: 5,
       ac: true,
       transmission: "Manual",
       fuel: "Petrol",
       price: 45,
       id: 1,
-      image: AudiImg
+      image: AudiImg,
+      image2: AudiImg2
     },
     {
       name: "VW Golf 6",
@@ -36,24 +43,26 @@ export default function FleetContext({children}) {
       fuel: "Diesel",
       price: 37,
       id: 2,
-      image: VwGolfImg
+      image: VwGolfImg,
+      image2: VwGolfImg2
     },
     {
       name: "Toyota Camry",
       model: "Camry",
       mark: "Toyota",
-      year: 2006,
+      year: 2013,
       doors: 5,
       ac: true,
       transmission: "Automatic",
       fuel: "Hybrid",
       price: 35,
       id: 3,
-      image: ToyotaImg
+      image: ToyotaImg,
+      image2: ToyotaImg2
     },
     {
-      name: "BMW 320 ModernLine",
-      model: "320",
+      name: "BMW 3 Series",
+      model: "BMW 320",
       mark: "BMW",
       year: 2013,
       doors: 5,
@@ -62,33 +71,36 @@ export default function FleetContext({children}) {
       fuel: "Diesel",
       price: 40,
       id: 4,
-      image: BmwImg
+      image: BmwImg,
+      image2: BmwImg2
     },
     {
       name: "Mercedes-Benz GLK",
-      model: "Benz GLK",
+      model: "GLK",
       mark: "Mercedes",
-      year: 2006,
+      year: 2009,
       doors: 5,
       ac: true,
       transmission: "Automatic",
       fuel: "Petrol",
       price: 50,
       id: 5,
-      image: MercImg
+      image: MercImg,
+      image2: MercImg2
     },
     {
       name: "VW Passat CC",
-      model: "Passat CC",
+      model: "Passat",
       mark: "Volkswagen",
-      year: 2008,
+      year: 2010,
       doors: 5,
       ac: true,
       transmission: "Automatic",
       fuel: "Petrol",
       price: 35,
       id: 6,
-      image: VwPassatImg
+      image: VwPassatImg,
+      image2: VwPassatImg2
     },
   ])
 
