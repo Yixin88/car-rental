@@ -2305,6 +2305,12 @@ header .hamburger-menu a:hover {
   min-width: 20rem;
   padding: 1rem 2rem;
   margin: 0 auto;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.vehicle-grid-section__container .vehicle-card:hover {
+  -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
 }
 .vehicle-grid-section__container .vehicle-card__image-container {
   width: 100%;
@@ -2315,6 +2321,7 @@ header .hamburger-menu a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 .vehicle-grid-section__container .vehicle-card__image-container img {
   width: 100%;
