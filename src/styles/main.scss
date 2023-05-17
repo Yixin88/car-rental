@@ -2051,7 +2051,8 @@ header {
 
             ul {
                 @include flexCenter($direction: column, $align-item: normal);
-                gap: .5rem;
+                gap: 1rem;
+                margin-top: 1rem;
 
 
                 li {

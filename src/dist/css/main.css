@@ -2501,7 +2501,8 @@ header .hamburger-menu a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 .contactForm-section__container .contactForm-left ul li {
   list-style: none;
