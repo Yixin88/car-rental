@@ -1842,6 +1842,9 @@ header .hamburger-menu a:hover {
 .footer-section__container .contact-info:hover {
   color: rgb(255, 75, 48);
 }
+.footer-section__container .contact-info:hover a {
+  color: rgb(255, 75, 48);
+}
 .footer-section__container input {
   width: 100%;
   border: solid #e9e9e9;

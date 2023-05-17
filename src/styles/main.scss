@@ -1511,8 +1511,12 @@ header {
             font-weight: $weightBold;
             transition: .2s ease-in-out;
 
-            &:hover {
+            &:hover{
                 color: $primaryColor;
+
+                a {
+                    color: $primaryColor;
+                }
             }
         }
 
