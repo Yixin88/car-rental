@@ -30,11 +30,11 @@ export default function ContactForm() {
 
         <form action="post" className='contactForm-right'>
           <label htmlFor="fullName" className='contactFormLabel'>Full Name</label>
-          <input type="text" id='fullName' placeholder='e.g. John Smith' />
-          <label htmlFor="email" className='contactFormLabel'>Full Name</label>
-          <input type="email" id='email' placeholder='example@email.com' />
-          <label htmlFor="message" className='contactFormLabel'>Full Name</label>
-          <textarea id="message" placeholder='Please type your message here'></textarea>
+          <input type="text" id='fullName' placeholder='e.g. John Smith' required/>
+          <label htmlFor="email" className='contactFormLabel'>Email</label>
+          <input type="email" id='email' placeholder='example@email.com' required/>
+          <label htmlFor="message" className='contactFormLabel'>Tell us about it</label>
+          <textarea id="message" placeholder='Please type your message here' required></textarea>
           <button type='submit' onClick={formCheck}><i className='fa-solid fa-envelope-open-text'></i>Send Message</button>
         </form>
       </div>

@@ -2017,15 +2017,20 @@ header {
 .contactForm-section {
     width: 100%;
     max-width: $maxWidth;
-    margin: 5rem auto;
+    margin: 0 auto;
+
+    
     
     &__container {
         margin: 0 auto;
-        padding: 0 2rem;
+        padding: 5rem 2rem;
         display: flex;
         max-width: 80rem;
         width: 100%;
-        gap: 7rem;
+        gap: 5rem;
+        background-image: url('../../images/banners/bg-contact.png');
+        background-repeat: no-repeat;
+        background-position: center;
 
         &>div, &>form {
             flex: 1 1 0;
@@ -2075,6 +2080,76 @@ header {
                             color: $primaryColor;
                         }
                     }
+                }
+            }
+        }
+
+        .contactForm-right {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1rem;
+                font-weight: $weightSemiBold;
+                margin-bottom: .5rem;
+                width: fit-content;
+
+                &::after {
+                    content: " *";
+                    color: red;
+                }
+            }
+
+            input, textarea {
+                padding: .8rem 1rem;
+                font-family: inherit;
+                background-color: #f2f2f2;
+                border: solid #f2f2f2;
+                border-radius: .2rem;
+                margin-bottom: 1.5rem;
+                transition: border .2s ease-in-out;
+                resize: vertical;
+
+                &:hover {
+                    border: solid $primaryColor;
+                }
+            }
+
+            textarea {
+                min-height: 10rem;
+            }
+
+            button {
+                padding: .8rem 1rem;
+                font-size: 1rem;
+                font-weight: $weightBold;
+                font-family: inherit;
+                @include flexCenter();
+                gap: .5rem;
+                background-color: $primaryColor;
+                border: none;
+                border-radius: .2rem;
+                box-shadow: $primaryButtonShadow;
+                transition: .3s ease-in-out;
+                color: white;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: $primaryButtonHoverShadow;
+                }
+            }
+        }
+
+        @include md {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+
+            ul {
+                margin-top: 2rem;
+                gap: 1rem !important;
+                li {
+                    justify-content: center !important;
                 }
             }
         }

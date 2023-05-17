@@ -2451,17 +2451,20 @@ header .hamburger-menu a:hover {
 .contactForm-section {
   width: 100%;
   max-width: 100rem !important;
-  margin: 5rem auto;
+  margin: 0 auto;
 }
 .contactForm-section__container {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 80rem;
   width: 100%;
-  gap: 7rem;
+  gap: 5rem;
+  background-image: url("../../images/banners/bg-contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contactForm-section__container > div, .contactForm-section__container > form {
   -webkit-box-flex: 1;
@@ -2537,4 +2540,94 @@ header .hamburger-menu a:hover {
 }
 .contactForm-section__container .contactForm-left ul li:hover a {
   color: rgb(255, 75, 48);
+}
+.contactForm-section__container .contactForm-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm-section__container .contactForm-right label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contactForm-section__container .contactForm-right label::after {
+  content: " *";
+  color: red;
+}
+.contactForm-section__container .contactForm-right input, .contactForm-section__container .contactForm-right textarea {
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  background-color: #f2f2f2;
+  border: solid #f2f2f2;
+  border-radius: 0.2rem;
+  margin-bottom: 1.5rem;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  resize: vertical;
+}
+.contactForm-section__container .contactForm-right input:hover, .contactForm-section__container .contactForm-right textarea:hover {
+  border: solid rgb(255, 75, 48);
+}
+.contactForm-section__container .contactForm-right textarea {
+  min-height: 10rem;
+}
+.contactForm-section__container .contactForm-right button {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+  background-color: rgb(255, 75, 48);
+  border: none;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+          box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+.contactForm-section__container .contactForm-right button:hover {
+  -webkit-box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+          box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
+}
+@media (max-width: 768px) {
+  .contactForm-section__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .contactForm-section__container ul {
+    margin-top: 2rem;
+    gap: 1rem !important;
+  }
+  .contactForm-section__container ul li {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }/*# sourceMappingURL=main.css.map */
