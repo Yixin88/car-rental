@@ -11,6 +11,19 @@ body {
   background-color: #fff;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 header {
   position: relative;
 }
@@ -253,6 +266,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .home-banner {
   position: relative;
 }
@@ -411,6 +437,19 @@ header .hamburger-menu a:hover {
             align-items: center;
     text-align: center;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .booking-section {
@@ -582,6 +621,19 @@ header .hamburger-menu a:hover {
   .booking-section .booking .bookingForm {
     grid-template-columns: 1fr;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .booking-popup {
@@ -991,6 +1043,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .planTrip {
   max-width: 100rem !important;
   width: 100%;
@@ -1058,6 +1123,19 @@ header .hamburger-menu a:hover {
   .planTrip .planTrip-container__details {
     grid-template-columns: 1fr;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .fleet-section {
@@ -1292,6 +1370,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .basicBanner {
   width: 100%;
   background-color: #2d2d2d;
@@ -1310,6 +1401,19 @@ header .hamburger-menu a:hover {
 }
 .basicBanner h3 span {
   color: rgb(255, 75, 48);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .chooseUs-section {
@@ -1497,6 +1601,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .reviews-section {
   width: 100%;
   background-color: #f8f8f8;
@@ -1613,6 +1730,19 @@ header .hamburger-menu a:hover {
   font-size: 4rem;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .faq-section {
   width: 100%;
   margin: 0 auto;
@@ -1721,6 +1851,19 @@ header .hamburger-menu a:hover {
   grid-template-rows: 1fr;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .download-section {
   width: 100%;
   background-color: #f8f8f8;
@@ -1772,6 +1915,19 @@ header .hamburger-menu a:hover {
   .download-section {
     background-image: none;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .footer-section {
@@ -1920,6 +2076,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .to-top {
   background-color: rgb(255, 75, 48);
   position: fixed;
@@ -1958,6 +2127,19 @@ header .hamburger-menu a:hover {
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .subPage-banner {
@@ -2041,6 +2223,19 @@ header .hamburger-menu a:hover {
             justify-content: center;
     text-align: center;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .about-company-section {
@@ -2184,6 +2379,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .callBanner-section {
   width: 100%;
   padding: 5rem 0;
@@ -2252,6 +2460,19 @@ header .hamburger-menu a:hover {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
+}
+
 .people-grid-section {
   width: 100%;
 }
@@ -2318,6 +2539,19 @@ header .hamburger-menu a:hover {
   .people-grid-section__container {
     padding: 0;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .vehicle-grid-section {
@@ -2485,6 +2719,19 @@ header .hamburger-menu a:hover {
           box-shadow: 0 15px 15px 0 rgba(255, 83, 48, 0.5);
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #fff;
 }
 
 .contactForm-section {
