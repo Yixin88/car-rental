@@ -6,6 +6,7 @@ import Vehicle from "./pages/Vehicle";
 import Testimonials from "./pages/Testimonials";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,11 +18,7 @@ const router = createBrowserRouter(
       <Route path='team' element={<Team />} />
       <Route path='contact' element={<Contact />} />
 
-
-
-
-
-
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 )
