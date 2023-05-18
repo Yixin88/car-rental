@@ -1,4 +1,4 @@
-<div align='center'><img style="width:30%" src='https://prnt.sc/2nbi6OK_-b_z'/></div>
+<div align='center'><img style="width:30%" src='https://raw.githubusercontent.com/Yixin88/car-rental/main/src/images/logo/logo.png'/></div>
 
 <h2>About the project</h2>
 
