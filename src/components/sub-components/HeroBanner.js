@@ -17,7 +17,7 @@ export default function Hero_Banner() {
                         Book Ride 
                         <i className='fa-solid fa-circle-check'></i>
                     </a>
-                    <NavLink>
+                    <NavLink to='about'>
                         Learn More 
                         <i className='fa-solid fa-angle-right'></i>
                     </NavLink>
