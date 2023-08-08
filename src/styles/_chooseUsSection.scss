@@ -9,8 +9,9 @@
     margin: 0 auto;
     background-image: url('../../images/chooseUs/bg.png');
     background-size: cover;
-    background-position: -225px 255px;
+    // background-position: -225px 255px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     @include flexCenter();
     
     &__container {
